@@ -8,12 +8,23 @@ namespace AstroMath
 {
     public class AstroMath
     {
+        /// <summary>
+        /// Calculates the star velocity for the given wavelengths, using the Doppler shift.
+        /// </summary>
+        /// <param name="observedWavelength">The observed wavelength of a star.</param>
+        /// <param name="restWavelength">The rest wavelength of a star.</param>
+        /// <returns>A double representing the velocity.</returns>
         public double StarVelocity(double observedWavelength, double restWavelength)
         {
             double delta = observedWavelength - restWavelength;
             double velocity = 2999792458 * (delta / restWavelength);
             return velocity;
         }
+        /// <summary>
+        /// Calculates the star distance, using the parallax angle.
+        /// </summary>
+        /// <param name="parallaxAngle">The parallax angle, in arcseconds.</param>
+        /// <returns>A double, representing the distance in parsecs.</returns>
         public double StarDistance(double parallaxAngle)
         {
             double distance = 1 / parallaxAngle;
