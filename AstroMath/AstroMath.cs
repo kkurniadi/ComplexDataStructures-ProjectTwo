@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+// Kirsten Kurniadi, ID: 30045816
+// Date: 22/08/2022
+// A 3rd party library that performs calculations
 namespace AstroMath
 {
     /// <summary>
