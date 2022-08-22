@@ -20,8 +20,7 @@ namespace AstroMath
         public double StarVelocity(double observedWavelength, double restWavelength)
         {
             double delta = observedWavelength - restWavelength;
-            double velocity = 2999792458 * (delta / restWavelength);
-            return velocity;
+            return 2999792458 * (delta / restWavelength);
         }
         /// <summary>
         /// Calculates the star distance, using the parallax angle.
@@ -30,8 +29,7 @@ namespace AstroMath
         /// <returns>A double, representing the distance in parsecs.</returns>
         public double StarDistance(double parallaxAngle)
         {
-            double distance = 1 / parallaxAngle;
-            return distance;
+            return 1 / parallaxAngle;
         }
         /// <summary>
         /// Converts a temperature from Celsius to Kelvin.
@@ -40,8 +38,7 @@ namespace AstroMath
         /// <returns>The temperature, in Kelvin.</returns>
         public double TempInKelvin(double celsius)
         {
-            double kelvin = celsius + 273;
-            return kelvin;
+            return celsius + 273;
         }
         /// <summary>
         /// Calculates the distance from the centre of a black hole to the event horizon.
@@ -52,8 +49,7 @@ namespace AstroMath
         {
             double g = 6.674 * Math.Pow(10, -11);
             int c = 299792458;
-            double radius = (2 * g * mass) / Math.Pow(c, 2);
-            return radius;
+            return (2 * g * mass) / Math.Pow(c, 2);
         }
     }
 }
