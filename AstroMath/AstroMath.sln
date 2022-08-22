@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32811.315
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AstroMath", "AstroMath.csproj", "{E86CF15A-3BA6-4934-853E-55D927503B64}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AstroMathTest", "..\AstroMathTest\AstroMathTest.csproj", "{7CA65726-7347-4E01-A7D4-B786FBD05210}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,9 @@ Global
 		{E86CF15A-3BA6-4934-853E-55D927503B64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E86CF15A-3BA6-4934-853E-55D927503B64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E86CF15A-3BA6-4934-853E-55D927503B64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CA65726-7347-4E01-A7D4-B786FBD05210}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CA65726-7347-4E01-A7D4-B786FBD05210}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CA65726-7347-4E01-A7D4-B786FBD05210}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
