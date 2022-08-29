@@ -9,7 +9,10 @@ using System.Threading.Tasks;
 // An interface that references the third-party library
 namespace Server
 {
+    [ServiceContract]
     public interface IAstroContract
     {
+        [OperationContract]
+        double StarVelocity(double observed, double rest);
     }
 }
