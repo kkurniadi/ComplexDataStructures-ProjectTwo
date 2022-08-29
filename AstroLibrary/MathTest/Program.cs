@@ -16,14 +16,12 @@ namespace MathTest
             // Instantiate class library
             Astro astro = new Astro();
             // Test the Star Velocity function
-            Console.WriteLine("Input observed wavelength:");
-            double observed = double.Parse(Console.ReadLine());
-            Console.WriteLine("Input rest wavelength:");
-            double rest = double.Parse(Console.ReadLine());
-            double sv = astro.StarVelocity(observed, rest);
+            double sv = astro.StarVelocity(500.1, 500);
             Console.WriteLine("Star velocity is: " + sv + " m/s");
-            Console.ReadLine();
             // Test the Star Distance function
+            double sd = astro.StarDistance(0.547);
+            Console.WriteLine("Star distance is " + sd + " parsecs");
+            Console.ReadLine();
         }
     }
 }
