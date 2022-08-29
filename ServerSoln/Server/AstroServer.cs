@@ -12,6 +12,8 @@ namespace Server
 {
     internal class AstroServer : IAstroContract
     {
+        // 6.2.	Create the server file called “AstroServer.cs” which implements the IAstroContract.
+        // Add a new instance of the class library method and then create four methods with the suitable input parameters and return types.
         Astro astro = new Astro();
         public double StarVelocity(double d1, double d2)
         {
