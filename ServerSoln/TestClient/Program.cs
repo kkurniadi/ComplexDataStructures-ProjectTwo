@@ -22,7 +22,9 @@ namespace TestClient
 
             while (true)
             {
+                Console.WriteLine("Enter observed wavelength:");
                 double d1 = double.Parse(Console.ReadLine());
+                Console.WriteLine("Enter rest wavelength:");
                 double d2 = double.Parse(Console.ReadLine());
                 Console.WriteLine("pipe: " + pipeProxy.StarVelocity(d1, d2));
             }
