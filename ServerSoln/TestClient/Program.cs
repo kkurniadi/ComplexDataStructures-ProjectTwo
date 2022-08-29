@@ -12,6 +12,9 @@ namespace TestClient
     {
         static void Main(string[] args)
         {
+            // Create a separate console client with test data to establish connectivity and test the basic functionality of the server.
+            // Include code into final Server Solution Folder.
+            Console.WriteLine("Client started");
         }
     }
 }
