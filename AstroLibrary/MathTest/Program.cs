@@ -24,6 +24,10 @@ namespace MathTest
             // Test the Temperature in Kelvin function
             double k = astro.TempInKelvin(27);
             Console.WriteLine("Temperature in Kelvin is " + k + " K");
+            // Test the Event Horizon function
+            double mass = 8.2 * Math.Pow(10, 36);
+            double eh = astro.EventHorizon(mass);
+            Console.WriteLine("The event horizon is " + eh + " metres");
             Console.ReadLine();
         }
     }
