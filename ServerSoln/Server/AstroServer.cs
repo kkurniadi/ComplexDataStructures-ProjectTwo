@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using AstroMath;
 // Kirsten Kurniadi, ID: 30045816
 // Date: 29/08/2022
-// A class that implements the interface
+// A class that implements the IAstroContract interface
 namespace Server
 {
     internal class AstroServer : IAstroContract
