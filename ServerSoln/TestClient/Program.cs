@@ -22,6 +22,10 @@ namespace TestClient
 
             while (true)
             {
+                Console.WriteLine("To calculate star velocity, enter 'V'");
+                Console.WriteLine("To calculate star distance, enter 'D'");
+                Console.WriteLine("To calculate temperature in Kelvin, enter 'K'");
+                Console.WriteLine("To calculate event horizon, enter 'H'");
                 Console.WriteLine("Enter observed wavelength:");
                 double d1 = double.Parse(Console.ReadLine());
                 Console.WriteLine("Enter rest wavelength:");
