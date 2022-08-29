@@ -9,7 +9,11 @@ using System.Threading.Tasks;
 // A class that implements the interface
 namespace Server
 {
-    public class AstroServer
+    public class AstroServer : IAstroContract
     {
+        public double StarVelocity(double observed, double rest)
+        {
+            
+        }
     }
 }
