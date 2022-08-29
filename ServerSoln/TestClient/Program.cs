@@ -16,6 +16,16 @@ namespace TestClient
             // Create a separate console client with test data to establish connectivity and test the basic functionality of the server.
             // Include code into final Server Solution Folder.
             Console.WriteLine("Client started");
+            ChannelFactory<IAstroContract> pipeFactory = new ChannelFactory<IAstroContract>(
+                new NetNamedPipeBinding(), new EndpointAddress("net.pipe://localhost/AstroServer"));
+            IAstroContract pipeProxy = pipeFactory.CreateChannel();
+
+            while (true)
+            {
+                double d1 = double.Parse(Console.ReadLine());
+                double d2 = double.Parse(Console.ReadLine());
+                Console.WriteLine("pipe: " + pipeProxy.StarVelocity(d1, d2));
+            }
         }
     }
 }
