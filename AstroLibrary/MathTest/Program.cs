@@ -21,6 +21,9 @@ namespace MathTest
             // Test the Star Distance function
             double sd = astro.StarDistance(0.547);
             Console.WriteLine("Star distance is " + sd + " parsecs");
+            // Test the Temperature in Kelvin function
+            double k = astro.TempInKelvin(27);
+            Console.WriteLine("Temperature in Kelvin is " + k + " K");
             Console.ReadLine();
         }
     }
