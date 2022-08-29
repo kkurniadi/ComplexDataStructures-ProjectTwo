@@ -13,8 +13,11 @@ namespace MathTest
     {
         static void Main(string[] args)
         {
+            // Instantiate class library
             Astro astro = new Astro();
-            Console.WriteLine(astro.StarVelocity(500.1, 500));
+            // Test the Star Velocity function
+            double sv = astro.StarVelocity(500.1, 500);
+            Console.WriteLine("Star velocity is: " + sv + " m/s");
             Console.ReadLine();
         }
     }
