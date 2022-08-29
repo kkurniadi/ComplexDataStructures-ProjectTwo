@@ -11,7 +11,7 @@ namespace AstroMath
     /// <summary>
     /// A library that performs calculation services for astronomical data.
     /// </summary>
-    public class MathLib
+    public class Astro
     {
         /// <summary>
         /// Calculates the star velocity for the given wavelengths, using the Doppler shift.
