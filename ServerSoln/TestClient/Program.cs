@@ -27,6 +27,9 @@ namespace TestClient
                 Console.WriteLine("Enter rest wavelength:");
                 double d2 = double.Parse(Console.ReadLine());
                 Console.WriteLine("pipe: " + pipeProxy.StarVelocity(d1, d2));
+                Console.WriteLine("Enter parallax angle");
+                double angle = double.Parse(Console.ReadLine());
+                Console.WriteLine("pipe: " + pipeProxy.StarDistance(angle));
             }
         }
     }
