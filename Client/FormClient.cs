@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
+using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -20,5 +21,10 @@ namespace Client
         {
             InitializeComponent();
         }
+        // TODO: 7.3. Menu/Button option(s) to change the language and layout for the three different countries.
+
+        // TODO: 7.4. Menu option to change the form’s style (colours and visual appearance).
+
+        // TODO: 7.5. Menu/Button option to select a custom colour from a colour palette (Color Dialogbox)
     }
 }
