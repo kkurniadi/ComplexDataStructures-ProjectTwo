@@ -327,13 +327,13 @@
             // 
             this.numericUpDownMass.Location = new System.Drawing.Point(494, 200);
             this.numericUpDownMass.Name = "numericUpDownMass";
-            this.numericUpDownMass.Size = new System.Drawing.Size(54, 20);
+            this.numericUpDownMass.Size = new System.Drawing.Size(39, 20);
             this.numericUpDownMass.TabIndex = 22;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(555, 207);
+            this.label14.Location = new System.Drawing.Point(539, 207);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(19, 13);
             this.label14.TabIndex = 23;
