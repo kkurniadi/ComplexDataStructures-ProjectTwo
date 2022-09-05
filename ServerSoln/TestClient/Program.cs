@@ -31,6 +31,7 @@ namespace TestClient
                 string input = Console.ReadLine();
                 switch (input)
                 {
+                    case "v":
                     case "V":
                         Console.WriteLine("Enter observed wavelength:");
                         double d1 = double.Parse(Console.ReadLine());
@@ -38,21 +39,25 @@ namespace TestClient
                         double d2 = double.Parse(Console.ReadLine());
                         Console.WriteLine("pipe: " + pipeProxy.StarVelocity(d1, d2));
                         break;
+                    case "d":
                     case "D":
                         Console.WriteLine("Enter parallax angle");
                         double angle = double.Parse(Console.ReadLine());
                         Console.WriteLine("pipe: " + pipeProxy.StarDistance(angle));
                         break;
+                    case "k":
                     case "K":
                         Console.WriteLine("Enter temperature in Celsius");
                         double temp = double.Parse(Console.ReadLine());
                         Console.WriteLine("pipe: " + pipeProxy.TempInKelvin(temp));
                         break;
+                    case "h":
                     case "H":
                         Console.WriteLine("Enter blackhole mass");
                         double mass = double.Parse(Console.ReadLine());
                         Console.WriteLine("pipe: " + pipeProxy.EventHorizon(mass));
                         break;
+                    case "q":
                     case "Q":
                         running = false;
                         break;
