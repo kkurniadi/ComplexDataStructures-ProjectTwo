@@ -636,7 +636,7 @@
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="labelEventHorizon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>403, 151</value>
+    <value>395, 151</value>
   </data>
   <data name="labelEventHorizon.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 16</value>
@@ -663,7 +663,7 @@
     <value>True</value>
   </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>411, 177</value>
+    <value>403, 176</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 13</value>
