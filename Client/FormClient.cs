@@ -121,9 +121,11 @@ namespace Client
             {
                 case "Light":
                     BackColor = DefaultBackColor;
+                    ForeColor = DefaultForeColor;
                     break;
                 case "Dark":
                     BackColor = SystemColors.ControlDarkDark;
+                    ForeColor = SystemColors.ControlLightLight;
                     break;
             }
         }
