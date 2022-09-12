@@ -51,6 +51,7 @@ namespace Client
         {
             double celsius = double.Parse(textBoxCelsius.Text);
             dataGridViewDisplay.Rows.Add("Temp in Kelvin", pipeProxy.TempInKelvin(celsius), "K");
+            textBoxCelsius.Clear();
         }
 
         // TODO: 7.3. Menu/Button option(s) to change the language and layout for the three different countries.
