@@ -97,7 +97,7 @@
             // 
             this.EnglishToolStripMenuItem.Name = "EnglishToolStripMenuItem";
             resources.ApplyResources(this.EnglishToolStripMenuItem, "EnglishToolStripMenuItem");
-            this.EnglishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
+            this.EnglishToolStripMenuItem.Click += new System.EventHandler(this.EnglishToolStripMenuItem_Click);
             // 
             // FrenchToolStripMenuItem
             // 
