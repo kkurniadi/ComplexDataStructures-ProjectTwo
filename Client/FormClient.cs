@@ -47,6 +47,12 @@ namespace Client
             textBoxAngle.Clear();
         }
 
+        private void ButtonCalcKelvin_Click(object sender, EventArgs e)
+        {
+            double celsius = double.Parse(textBoxCelsius.Text);
+            dataGridViewDisplay.Rows.Add("Temp in Kelvin", pipeProxy.TempInKelvin(celsius), "K");
+        }
+
         // TODO: 7.3. Menu/Button option(s) to change the language and layout for the three different countries.
 
         // TODO: 7.4. Menu option to change the form’s style (colours and visual appearance).

@@ -291,6 +291,7 @@
             this.ButtonCalcKelvin.TabIndex = 17;
             this.ButtonCalcKelvin.Text = "Calculate";
             this.ButtonCalcKelvin.UseVisualStyleBackColor = true;
+            this.ButtonCalcKelvin.Click += new System.EventHandler(this.ButtonCalcKelvin_Click);
             // 
             // labelEventHorizon
             // 
