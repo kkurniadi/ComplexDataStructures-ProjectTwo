@@ -362,6 +362,7 @@
             this.ButtonCalcEH.TabIndex = 24;
             this.ButtonCalcEH.Text = "Calculate";
             this.ButtonCalcEH.UseVisualStyleBackColor = true;
+            this.ButtonCalcEH.Click += new System.EventHandler(this.ButtonCalcEH_Click);
             // 
             // dataGridViewDisplay
             // 

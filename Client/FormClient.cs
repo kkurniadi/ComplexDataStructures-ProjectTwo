@@ -54,6 +54,13 @@ namespace Client
             textBoxCelsius.Clear();
         }
 
+        private void ButtonCalcEH_Click(object sender, EventArgs e)
+        {
+            double mass = double.Parse(textBoxMass.Text) * Math.Pow(10, (double)numericUpDownMass.Value);
+            dataGridViewDisplay.Rows.Add("Event Horizon", pipeProxy.EventHorizon(mass), "m");
+            textBoxMass.Clear();
+        }
+
         // TODO: 7.3. Menu/Button option(s) to change the language and layout for the three different countries.
 
         // TODO: 7.4. Menu option to change the form’s style (colours and visual appearance).
