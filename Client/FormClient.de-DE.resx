@@ -117,6 +117,133 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="englishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="englishToolStripMenuItem.Text" xml:space="preserve">
+    <value>Englisch</value>
+  </data>
+  <data name="frenchToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="frenchToolStripMenuItem.Text" xml:space="preserve">
+    <value>Französisch</value>
+  </data>
+  <data name="germanToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="germanToolStripMenuItem.Text" xml:space="preserve">
+    <value>Deutsch</value>
+  </data>
+  <data name="LangToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 20</value>
+  </data>
+  <data name="LangToolStripMenuItem.Text" xml:space="preserve">
+    <value>Sprache</value>
+  </data>
+  <data name="lightToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="lightToolStripMenuItem.Text" xml:space="preserve">
+    <value>Licht</value>
+  </data>
+  <data name="darkToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="darkToolStripMenuItem.Text" xml:space="preserve">
+    <value>Dunkel</value>
+  </data>
+  <data name="customToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="customToolStripMenuItem.Text" xml:space="preserve">
+    <value>Benutzerdefiniertes</value>
+  </data>
+  <data name="themeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Thema</value>
+  </data>
+  <data name="labelVelocity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 16</value>
+  </data>
+  <data name="labelVelocity.Text" xml:space="preserve">
+    <value>Sterngeschwindigkeit</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 13</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Beobachtete Wellenlänge</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 13</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Ruhewellenlänge</value>
+  </data>
+  <data name="labelDistance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 16</value>
+  </data>
+  <data name="labelDistance.Text" xml:space="preserve">
+    <value>Sternenentfernung</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 13</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Parallaxenwinkel</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 13</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>bogensekunden</value>
+  </data>
+  <data name="ButtonCalcVelocity.Text" xml:space="preserve">
+    <value>Berechnung</value>
+  </data>
+  <data name="ButtonCalcDistance.Text" xml:space="preserve">
+    <value>Berechnung</value>
+  </data>
+  <data name="labelKelvin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 16</value>
+  </data>
+  <data name="labelKelvin.Text" xml:space="preserve">
+    <value>Temperatur in Kelvin</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 13</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Temperatur (Celsius)</value>
+  </data>
+  <data name="ButtonCalcKelvin.Text" xml:space="preserve">
+    <value>Berechnung</value>
+  </data>
+  <data name="labelEventHorizon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 16</value>
+  </data>
+  <data name="labelEventHorizon.Text" xml:space="preserve">
+    <value>Ereignishorizont</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 13</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>Masse eines Schwarzen Lochs</value>
+  </data>
+  <data name="ButtonCalcEH.Text" xml:space="preserve">
+    <value>Berechnung</value>
+  </data>
+  <data name="Column1.HeaderText" xml:space="preserve">
+    <value>Berechnungstyp</value>
+  </data>
+  <data name="Column2.HeaderText" xml:space="preserve">
+    <value>Ergebnis</value>
+  </data>
+  <data name="Column3.HeaderText" xml:space="preserve">
+    <value>Einheiten</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Astronomische Verarbeitung</value>
   </data>
