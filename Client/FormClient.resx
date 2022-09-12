@@ -121,29 +121,29 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="EnglishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="EnglishToolStripMenuItem.Text" xml:space="preserve">
-    <value>English</value>
-  </data>
-  <data name="FrenchToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="FrenchToolStripMenuItem.Text" xml:space="preserve">
-    <value>French</value>
-  </data>
-  <data name="GermanToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="GermanToolStripMenuItem.Text" xml:space="preserve">
-    <value>German</value>
-  </data>
   <data name="LangToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>71, 20</value>
   </data>
   <data name="LangToolStripMenuItem.Text" xml:space="preserve">
     <value>Language</value>
+  </data>
+  <data name="LightToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="LightToolStripMenuItem.Text" xml:space="preserve">
+    <value>Light</value>
+  </data>
+  <data name="DarkToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="DarkToolStripMenuItem.Text" xml:space="preserve">
+    <value>Dark</value>
+  </data>
+  <data name="CustomToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="CustomToolStripMenuItem.Text" xml:space="preserve">
+    <value>Custom</value>
   </data>
   <data name="themeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 20</value>
@@ -176,23 +176,23 @@
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
     <value>26</value>
   </data>
-  <data name="lightToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="EnglishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>116, 22</value>
   </data>
-  <data name="lightToolStripMenuItem.Text" xml:space="preserve">
-    <value>Light</value>
+  <data name="EnglishToolStripMenuItem.Text" xml:space="preserve">
+    <value>English</value>
   </data>
-  <data name="darkToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="FrenchToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>116, 22</value>
   </data>
-  <data name="darkToolStripMenuItem.Text" xml:space="preserve">
-    <value>Dark</value>
+  <data name="FrenchToolStripMenuItem.Text" xml:space="preserve">
+    <value>French</value>
   </data>
-  <data name="customToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="GermanToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>116, 22</value>
   </data>
-  <data name="customToolStripMenuItem.Text" xml:space="preserve">
-    <value>Custom</value>
+  <data name="GermanToolStripMenuItem.Text" xml:space="preserve">
+    <value>German</value>
   </data>
   <data name="labelVelocity.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -942,22 +942,22 @@
   <data name="&gt;&gt;themeToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lightToolStripMenuItem.Name" xml:space="preserve">
-    <value>lightToolStripMenuItem</value>
+  <data name="&gt;&gt;LightToolStripMenuItem.Name" xml:space="preserve">
+    <value>LightToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;lightToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;LightToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;darkToolStripMenuItem.Name" xml:space="preserve">
-    <value>darkToolStripMenuItem</value>
+  <data name="&gt;&gt;DarkToolStripMenuItem.Name" xml:space="preserve">
+    <value>DarkToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;darkToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;DarkToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;customToolStripMenuItem.Name" xml:space="preserve">
-    <value>customToolStripMenuItem</value>
+  <data name="&gt;&gt;CustomToolStripMenuItem.Name" xml:space="preserve">
+    <value>CustomToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;customToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;CustomToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Column1.Name" xml:space="preserve">

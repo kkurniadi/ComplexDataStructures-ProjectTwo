@@ -35,9 +35,9 @@
             this.FrenchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.GermanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.themeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.darkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.customToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.LightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.DarkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CustomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.labelVelocity = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -114,26 +114,26 @@
             // themeToolStripMenuItem
             // 
             this.themeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lightToolStripMenuItem,
-            this.darkToolStripMenuItem,
-            this.customToolStripMenuItem});
+            this.LightToolStripMenuItem,
+            this.DarkToolStripMenuItem,
+            this.CustomToolStripMenuItem});
             this.themeToolStripMenuItem.Name = "themeToolStripMenuItem";
             resources.ApplyResources(this.themeToolStripMenuItem, "themeToolStripMenuItem");
             // 
-            // lightToolStripMenuItem
+            // LightToolStripMenuItem
             // 
-            this.lightToolStripMenuItem.Name = "lightToolStripMenuItem";
-            resources.ApplyResources(this.lightToolStripMenuItem, "lightToolStripMenuItem");
+            this.LightToolStripMenuItem.Name = "LightToolStripMenuItem";
+            resources.ApplyResources(this.LightToolStripMenuItem, "LightToolStripMenuItem");
             // 
-            // darkToolStripMenuItem
+            // DarkToolStripMenuItem
             // 
-            this.darkToolStripMenuItem.Name = "darkToolStripMenuItem";
-            resources.ApplyResources(this.darkToolStripMenuItem, "darkToolStripMenuItem");
+            this.DarkToolStripMenuItem.Name = "DarkToolStripMenuItem";
+            resources.ApplyResources(this.DarkToolStripMenuItem, "DarkToolStripMenuItem");
             // 
-            // customToolStripMenuItem
+            // CustomToolStripMenuItem
             // 
-            this.customToolStripMenuItem.Name = "customToolStripMenuItem";
-            resources.ApplyResources(this.customToolStripMenuItem, "customToolStripMenuItem");
+            this.CustomToolStripMenuItem.Name = "CustomToolStripMenuItem";
+            resources.ApplyResources(this.CustomToolStripMenuItem, "CustomToolStripMenuItem");
             // 
             // labelVelocity
             // 
@@ -375,9 +375,9 @@
         private System.Windows.Forms.ToolStripMenuItem FrenchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem GermanToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem themeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem lightToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem darkToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem customToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem LightToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem DarkToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem CustomToolStripMenuItem;
         private System.Windows.Forms.Label labelVelocity;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
