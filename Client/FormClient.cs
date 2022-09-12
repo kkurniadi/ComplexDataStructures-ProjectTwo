@@ -94,6 +94,7 @@ namespace Client
                     Thread.CurrentThread.CurrentUICulture = new CultureInfo("de-DE");
                     break;
             }
+            Controls.Clear();
             InitializeComponent();
         }
         // TODO: 7.4. Menu option to change the form’s style (colours and visual appearance).
