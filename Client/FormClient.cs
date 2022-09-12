@@ -49,7 +49,8 @@ namespace Client
         private void ButtonCalcDistance_Click(object sender, EventArgs e)
         {
             double angle = double.Parse(textBoxAngle.Text);
-            dataGridViewDisplay.Rows.Add("Star Distance", pipeProxy.StarDistance(angle), "parsecs");
+            double distance = pipeProxy.StarDistance(angle);
+            dataGridViewDisplay.Rows.Add("Star Distance", distance.ToString("E2", CultureInfo.CurrentCulture), "parsecs");
             textBoxAngle.Clear();
         }
 
