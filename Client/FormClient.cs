@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.Drawing.Configuration;
 using System.Globalization;
 using System.Linq;
 using System.ServiceModel;
@@ -108,11 +109,23 @@ namespace Client
         // TODO: 7.4. Menu option to change the form’s style (colours and visual appearance).
         private void LightToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            ChangeTheme("Light");
         }
         private void DarkToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            ChangeTheme("Dark");
+        }
+        private void ChangeTheme(string themeName)
+        {
+            switch (themeName)
+            {
+                case "Light":
+                    BackColor = DefaultBackColor;
+                    break;
+                case "Dark":
+                    BackColor = SystemColors.ControlDarkDark;
+                    break;
+            }
         }
         // TODO: 7.5. Menu/Button option to select a custom colour from a colour palette (Color Dialogbox)
     }
