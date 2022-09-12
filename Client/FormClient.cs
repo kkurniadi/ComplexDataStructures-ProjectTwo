@@ -23,11 +23,6 @@ namespace Client
         {
             InitializeComponent();
         }
-        // 7.2. Create a form with suitable components for UI,
-        // a. Series of textboxes for large numeric data,
-        // b. A listview/datagrid for display of processed information from the server,
-        // c. Button(s) to initiate an event and send/receive data.
-        
         IAstroContract pipeProxy = null;
         private void FormClient_Load(object sender, EventArgs e)
         {
@@ -36,6 +31,11 @@ namespace Client
             pipeProxy = pipeFactory.CreateChannel();
             StatusStripConnection.Text = "Connected to server";
         }
+        // 7.2. Create a form with suitable components for UI,
+        // a. Series of textboxes for large numeric data,
+        // b. A listview/datagrid for display of processed information from the server,
+        // c. Button(s) to initiate an event and send/receive data.
+        #region CalcButtonMethods
         private void ButtonCalcVelocity_Click(object sender, EventArgs e)
         {
             double obs = double.Parse(textBoxObserved.Text);
@@ -45,7 +45,6 @@ namespace Client
             textBoxObserved.Clear();
             textBoxRest.Clear();
         }
-
         private void ButtonCalcDistance_Click(object sender, EventArgs e)
         {
             double angle = double.Parse(textBoxAngle.Text);
@@ -53,14 +52,12 @@ namespace Client
             dataGridViewDisplay.Rows.Add("Star Distance", distance.ToString("G3", CultureInfo.CurrentCulture), "parsecs");
             textBoxAngle.Clear();
         }
-
         private void ButtonCalcKelvin_Click(object sender, EventArgs e)
         {
             double celsius = double.Parse(textBoxCelsius.Text);
             dataGridViewDisplay.Rows.Add("Temp in Kelvin", pipeProxy.TempInKelvin(celsius), "K");
             textBoxCelsius.Clear();
         }
-
         private void ButtonCalcEH_Click(object sender, EventArgs e)
         {
             double mass = double.Parse(textBoxMass.Text) * Math.Pow(10, (double)numericUpDownMass.Value);
@@ -68,7 +65,7 @@ namespace Client
             dataGridViewDisplay.Rows.Add("Event Horizon", radius.ToString("G2", CultureInfo.CurrentCulture), "m");
             textBoxMass.Clear();
         }
-
+        #endregion
         // TODO: 7.3. Menu/Button option(s) to change the language and layout for the three different countries.
 
         // TODO: 7.4. Menu option to change the form’s style (colours and visual appearance).
