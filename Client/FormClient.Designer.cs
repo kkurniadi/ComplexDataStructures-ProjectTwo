@@ -456,6 +456,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormClient";
             this.Text = "Astronomical Processing";
+            this.Load += new System.EventHandler(this.FormClient_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMass)).EndInit();

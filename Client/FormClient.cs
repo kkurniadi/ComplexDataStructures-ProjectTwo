@@ -27,10 +27,15 @@ namespace Client
         // a. Series of textboxes for large numeric data,
         // b. A listview/datagrid for display of processed information from the server,
         // c. Button(s) to initiate an event and send/receive data.
-        static ChannelFactory<IAstroContract> pipeFactory = new ChannelFactory<IAstroContract>(
-                new NetNamedPipeBinding(), new EndpointAddress("net.pipe://localhost/AstroServer"));
-        IAstroContract pipeProxy = pipeFactory.CreateChannel();
         
+        IAstroContract pipeProxy = null;
+        private void FormClient_Load(object sender, EventArgs e)
+        {
+            ChannelFactory<IAstroContract> pipeFactory = new ChannelFactory<IAstroContract>(
+                new NetNamedPipeBinding(), new EndpointAddress("net.pipe://localhost/AstroServer"));
+            pipeProxy = pipeFactory.CreateChannel();
+            StatusStripConnection.Text = "Connected to server";
+        }
         private void ButtonCalcVelocity_Click(object sender, EventArgs e)
         {
             double obs = double.Parse(textBoxObserved.Text);
