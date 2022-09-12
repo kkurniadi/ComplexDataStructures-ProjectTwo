@@ -50,7 +50,7 @@ namespace Client
         {
             double angle = double.Parse(textBoxAngle.Text);
             double distance = pipeProxy.StarDistance(angle);
-            dataGridViewDisplay.Rows.Add("Star Distance", distance.ToString("E2", CultureInfo.CurrentCulture), "parsecs");
+            dataGridViewDisplay.Rows.Add("Star Distance", distance.ToString("G3", CultureInfo.CurrentCulture), "parsecs");
             textBoxAngle.Clear();
         }
 
