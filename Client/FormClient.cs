@@ -27,6 +27,10 @@ namespace Client
         IAstroContract pipeProxy = null;
         private void FormClient_Load(object sender, EventArgs e)
         {
+            ConnectToServer();
+        }
+        private void ConnectToServer()
+        {
             ChannelFactory<IAstroContract> pipeFactory = new ChannelFactory<IAstroContract>(
                 new NetNamedPipeBinding(), new EndpointAddress("net.pipe://localhost/AstroServer"));
             pipeProxy = pipeFactory.CreateChannel();
@@ -96,6 +100,7 @@ namespace Client
             }
             Controls.Clear();
             InitializeComponent();
+            ConnectToServer();
         }
         // TODO: 7.4. Menu option to change the form’s style (colours and visual appearance).
 
