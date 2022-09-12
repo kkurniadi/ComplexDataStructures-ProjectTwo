@@ -504,7 +504,7 @@
     <value>14</value>
   </data>
   <data name="ButtonCalcDistance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>406, 129</value>
+    <value>406, 110</value>
   </data>
   <data name="ButtonCalcDistance.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -636,7 +636,7 @@
     <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
   </data>
   <data name="labelEventHorizon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>400, 174</value>
+    <value>403, 151</value>
   </data>
   <data name="labelEventHorizon.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 16</value>
@@ -663,7 +663,7 @@
     <value>True</value>
   </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>315, 207</value>
+    <value>411, 177</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
     <value>82, 13</value>
@@ -687,7 +687,7 @@
     <value>7</value>
   </data>
   <data name="textBoxMass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>414, 204</value>
+    <value>379, 204</value>
   </data>
   <data name="textBoxMass.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 20</value>
@@ -711,7 +711,7 @@
     <value>True</value>
   </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>461, 207</value>
+    <value>426, 207</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
     <value>27, 13</value>
@@ -735,7 +735,7 @@
     <value>5</value>
   </data>
   <data name="numericUpDownMass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>494, 200</value>
+    <value>459, 200</value>
   </data>
   <data name="numericUpDownMass.Size" type="System.Drawing.Size, System.Drawing">
     <value>39, 20</value>
@@ -759,7 +759,7 @@
     <value>True</value>
   </data>
   <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>539, 207</value>
+    <value>504, 207</value>
   </data>
   <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
     <value>19, 13</value>
