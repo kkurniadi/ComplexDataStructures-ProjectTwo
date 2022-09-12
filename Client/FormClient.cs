@@ -65,6 +65,11 @@ namespace Client
             dataGridViewDisplay.Rows.Add("Event Horizon", radius.ToString("G2", CultureInfo.CurrentCulture), "m");
             textBoxMass.Clear();
         }
+
+        private void EnglishToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
         #endregion
         // TODO: 7.3. Menu/Button option(s) to change the language and layout for the three different countries.
 

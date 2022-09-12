@@ -31,9 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormClient));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.LangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.frenchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.germanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.EnglishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.FrenchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.GermanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.themeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.darkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -87,26 +87,27 @@
             // LangToolStripMenuItem
             // 
             this.LangToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.englishToolStripMenuItem,
-            this.frenchToolStripMenuItem,
-            this.germanToolStripMenuItem});
+            this.EnglishToolStripMenuItem,
+            this.FrenchToolStripMenuItem,
+            this.GermanToolStripMenuItem});
             this.LangToolStripMenuItem.Name = "LangToolStripMenuItem";
             resources.ApplyResources(this.LangToolStripMenuItem, "LangToolStripMenuItem");
             // 
-            // englishToolStripMenuItem
+            // EnglishToolStripMenuItem
             // 
-            this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
+            this.EnglishToolStripMenuItem.Name = "EnglishToolStripMenuItem";
+            resources.ApplyResources(this.EnglishToolStripMenuItem, "EnglishToolStripMenuItem");
+            this.EnglishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
             // 
-            // frenchToolStripMenuItem
+            // FrenchToolStripMenuItem
             // 
-            this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
-            resources.ApplyResources(this.frenchToolStripMenuItem, "frenchToolStripMenuItem");
+            this.FrenchToolStripMenuItem.Name = "FrenchToolStripMenuItem";
+            resources.ApplyResources(this.FrenchToolStripMenuItem, "FrenchToolStripMenuItem");
             // 
-            // germanToolStripMenuItem
+            // GermanToolStripMenuItem
             // 
-            this.germanToolStripMenuItem.Name = "germanToolStripMenuItem";
-            resources.ApplyResources(this.germanToolStripMenuItem, "germanToolStripMenuItem");
+            this.GermanToolStripMenuItem.Name = "GermanToolStripMenuItem";
+            resources.ApplyResources(this.GermanToolStripMenuItem, "GermanToolStripMenuItem");
             // 
             // themeToolStripMenuItem
             // 
@@ -368,9 +369,9 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem LangToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem frenchToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem germanToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem EnglishToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem FrenchToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem GermanToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem themeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lightToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem darkToolStripMenuItem;
