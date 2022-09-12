@@ -21,6 +21,9 @@ namespace Client
         {
             InitializeComponent();
         }
+        static ChannelFactory<IAstroContract> pipeFactory = new ChannelFactory<IAstroContract>(
+                new NetNamedPipeBinding(), new EndpointAddress("net.pipe://localhost/AstroServer"));
+        IAstroContract pipeProxy = pipeFactory.CreateChannel();
         // TODO: 7.3. Menu/Button option(s) to change the language and layout for the three different countries.
 
         // TODO: 7.4. Menu option to change the form’s style (colours and visual appearance).
