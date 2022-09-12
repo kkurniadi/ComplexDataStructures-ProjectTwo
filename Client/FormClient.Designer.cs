@@ -245,6 +245,7 @@
             this.ButtonCalcVelocity.TabIndex = 12;
             this.ButtonCalcVelocity.Text = "Calculate";
             this.ButtonCalcVelocity.UseVisualStyleBackColor = true;
+            this.ButtonCalcVelocity.Click += new System.EventHandler(this.ButtonCalcVelocity_Click);
             // 
             // ButtonCalcDistance
             // 

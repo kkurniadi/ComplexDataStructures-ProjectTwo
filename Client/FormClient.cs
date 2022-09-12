@@ -31,8 +31,15 @@ namespace Client
                 new NetNamedPipeBinding(), new EndpointAddress("net.pipe://localhost/AstroServer"));
         IAstroContract pipeProxy = pipeFactory.CreateChannel();
 
+        private void ButtonCalcVelocity_Click(object sender, EventArgs e)
+        {
+            double obs = double.Parse(textBoxObserved.Text);
+            double rest = double.Parse(textBoxRest.Text);
+            dataGridViewDisplay.Rows.Add("Star Velocity", pipeProxy.StarVelocity(obs, rest), "m/s");
+        }
+
         // TODO: 7.3. Menu/Button option(s) to change the language and layout for the three different countries.
-        
+
         // TODO: 7.4. Menu option to change the form’s style (colours and visual appearance).
 
         // TODO: 7.5. Menu/Button option to select a custom colour from a colour palette (Color Dialogbox)
