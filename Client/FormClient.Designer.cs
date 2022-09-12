@@ -124,11 +124,13 @@
             // 
             this.LightToolStripMenuItem.Name = "LightToolStripMenuItem";
             resources.ApplyResources(this.LightToolStripMenuItem, "LightToolStripMenuItem");
+            this.LightToolStripMenuItem.Click += new System.EventHandler(this.LightToolStripMenuItem_Click);
             // 
             // DarkToolStripMenuItem
             // 
             this.DarkToolStripMenuItem.Name = "DarkToolStripMenuItem";
             resources.ApplyResources(this.DarkToolStripMenuItem, "DarkToolStripMenuItem");
+            this.DarkToolStripMenuItem.Click += new System.EventHandler(this.DarkToolStripMenuItem_Click);
             // 
             // CustomToolStripMenuItem
             // 

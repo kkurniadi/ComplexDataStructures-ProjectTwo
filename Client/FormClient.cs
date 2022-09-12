@@ -106,7 +106,14 @@ namespace Client
         }
         #endregion
         // TODO: 7.4. Menu option to change the form’s style (colours and visual appearance).
+        private void LightToolStripMenuItem_Click(object sender, EventArgs e)
+        {
 
+        }
+        private void DarkToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
         // TODO: 7.5. Menu/Button option to select a custom colour from a colour palette (Color Dialogbox)
     }
 }
