@@ -48,19 +48,19 @@
             this.label7 = new System.Windows.Forms.Label();
             this.textBoxAngle = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.buttonCalcVelocity = new System.Windows.Forms.Button();
-            this.buttonCalcDistance = new System.Windows.Forms.Button();
+            this.ButtonCalcVelocity = new System.Windows.Forms.Button();
+            this.ButtonCalcDistance = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.textBoxCelsius = new System.Windows.Forms.TextBox();
-            this.buttonCalcKelvin = new System.Windows.Forms.Button();
+            this.ButtonCalcKelvin = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.textBoxMass = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.numericUpDownMass = new System.Windows.Forms.NumericUpDown();
             this.label14 = new System.Windows.Forms.Label();
-            this.buttonCalcEH = new System.Windows.Forms.Button();
+            this.ButtonCalcEH = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -97,19 +97,19 @@
             // englishToolStripMenuItem
             // 
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            this.englishToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.englishToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.englishToolStripMenuItem.Text = "English";
             // 
             // frenchToolStripMenuItem
             // 
             this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
-            this.frenchToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.frenchToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.frenchToolStripMenuItem.Text = "French";
             // 
             // germanToolStripMenuItem
             // 
             this.germanToolStripMenuItem.Name = "germanToolStripMenuItem";
-            this.germanToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.germanToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.germanToolStripMenuItem.Text = "German";
             // 
             // themeToolStripMenuItem
@@ -125,19 +125,19 @@
             // lightToolStripMenuItem
             // 
             this.lightToolStripMenuItem.Name = "lightToolStripMenuItem";
-            this.lightToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.lightToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.lightToolStripMenuItem.Text = "Light";
             // 
             // darkToolStripMenuItem
             // 
             this.darkToolStripMenuItem.Name = "darkToolStripMenuItem";
-            this.darkToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.darkToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.darkToolStripMenuItem.Text = "Dark";
             // 
             // customToolStripMenuItem
             // 
             this.customToolStripMenuItem.Name = "customToolStripMenuItem";
-            this.customToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.customToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.customToolStripMenuItem.Text = "Custom";
             // 
             // label1
@@ -235,23 +235,23 @@
             this.label8.TabIndex = 11;
             this.label8.Text = "arcseconds";
             // 
-            // buttonCalcVelocity
+            // ButtonCalcVelocity
             // 
-            this.buttonCalcVelocity.Location = new System.Drawing.Point(110, 129);
-            this.buttonCalcVelocity.Name = "buttonCalcVelocity";
-            this.buttonCalcVelocity.Size = new System.Drawing.Size(75, 23);
-            this.buttonCalcVelocity.TabIndex = 12;
-            this.buttonCalcVelocity.Text = "Calculate";
-            this.buttonCalcVelocity.UseVisualStyleBackColor = true;
+            this.ButtonCalcVelocity.Location = new System.Drawing.Point(110, 129);
+            this.ButtonCalcVelocity.Name = "ButtonCalcVelocity";
+            this.ButtonCalcVelocity.Size = new System.Drawing.Size(75, 23);
+            this.ButtonCalcVelocity.TabIndex = 12;
+            this.ButtonCalcVelocity.Text = "Calculate";
+            this.ButtonCalcVelocity.UseVisualStyleBackColor = true;
             // 
-            // buttonCalcDistance
+            // ButtonCalcDistance
             // 
-            this.buttonCalcDistance.Location = new System.Drawing.Point(406, 129);
-            this.buttonCalcDistance.Name = "buttonCalcDistance";
-            this.buttonCalcDistance.Size = new System.Drawing.Size(75, 23);
-            this.buttonCalcDistance.TabIndex = 13;
-            this.buttonCalcDistance.Text = "Calculate";
-            this.buttonCalcDistance.UseVisualStyleBackColor = true;
+            this.ButtonCalcDistance.Location = new System.Drawing.Point(406, 129);
+            this.ButtonCalcDistance.Name = "ButtonCalcDistance";
+            this.ButtonCalcDistance.Size = new System.Drawing.Size(75, 23);
+            this.ButtonCalcDistance.TabIndex = 13;
+            this.ButtonCalcDistance.Text = "Calculate";
+            this.ButtonCalcDistance.UseVisualStyleBackColor = true;
             // 
             // label9
             // 
@@ -279,14 +279,14 @@
             this.textBoxCelsius.Size = new System.Drawing.Size(100, 20);
             this.textBoxCelsius.TabIndex = 16;
             // 
-            // buttonCalcKelvin
+            // ButtonCalcKelvin
             // 
-            this.buttonCalcKelvin.Location = new System.Drawing.Point(110, 242);
-            this.buttonCalcKelvin.Name = "buttonCalcKelvin";
-            this.buttonCalcKelvin.Size = new System.Drawing.Size(75, 23);
-            this.buttonCalcKelvin.TabIndex = 17;
-            this.buttonCalcKelvin.Text = "Calculate";
-            this.buttonCalcKelvin.UseVisualStyleBackColor = true;
+            this.ButtonCalcKelvin.Location = new System.Drawing.Point(110, 242);
+            this.ButtonCalcKelvin.Name = "ButtonCalcKelvin";
+            this.ButtonCalcKelvin.Size = new System.Drawing.Size(75, 23);
+            this.ButtonCalcKelvin.TabIndex = 17;
+            this.ButtonCalcKelvin.Text = "Calculate";
+            this.ButtonCalcKelvin.UseVisualStyleBackColor = true;
             // 
             // label11
             // 
@@ -339,14 +339,14 @@
             this.label14.TabIndex = 23;
             this.label14.Text = "kg";
             // 
-            // buttonCalcEH
+            // ButtonCalcEH
             // 
-            this.buttonCalcEH.Location = new System.Drawing.Point(406, 242);
-            this.buttonCalcEH.Name = "buttonCalcEH";
-            this.buttonCalcEH.Size = new System.Drawing.Size(75, 23);
-            this.buttonCalcEH.TabIndex = 24;
-            this.buttonCalcEH.Text = "Calculate";
-            this.buttonCalcEH.UseVisualStyleBackColor = true;
+            this.ButtonCalcEH.Location = new System.Drawing.Point(406, 242);
+            this.ButtonCalcEH.Name = "ButtonCalcEH";
+            this.ButtonCalcEH.Size = new System.Drawing.Size(75, 23);
+            this.ButtonCalcEH.TabIndex = 24;
+            this.ButtonCalcEH.Text = "Calculate";
+            this.ButtonCalcEH.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -399,19 +399,19 @@
             this.ClientSize = new System.Drawing.Size(599, 468);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.buttonCalcEH);
+            this.Controls.Add(this.ButtonCalcEH);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.numericUpDownMass);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.textBoxMass);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.buttonCalcKelvin);
+            this.Controls.Add(this.ButtonCalcKelvin);
             this.Controls.Add(this.textBoxCelsius);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.buttonCalcDistance);
-            this.Controls.Add(this.buttonCalcVelocity);
+            this.Controls.Add(this.ButtonCalcDistance);
+            this.Controls.Add(this.ButtonCalcVelocity);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBoxAngle);
             this.Controls.Add(this.label7);
@@ -460,19 +460,19 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBoxAngle;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button buttonCalcVelocity;
-        private System.Windows.Forms.Button buttonCalcDistance;
+        private System.Windows.Forms.Button ButtonCalcVelocity;
+        private System.Windows.Forms.Button ButtonCalcDistance;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBoxCelsius;
-        private System.Windows.Forms.Button buttonCalcKelvin;
+        private System.Windows.Forms.Button ButtonCalcKelvin;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox textBoxMass;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.NumericUpDown numericUpDownMass;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Button buttonCalcEH;
+        private System.Windows.Forms.Button ButtonCalcEH;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
