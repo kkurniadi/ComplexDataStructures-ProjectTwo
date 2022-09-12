@@ -255,6 +255,7 @@
             this.ButtonCalcDistance.TabIndex = 13;
             this.ButtonCalcDistance.Text = "Calculate";
             this.ButtonCalcDistance.UseVisualStyleBackColor = true;
+            this.ButtonCalcDistance.Click += new System.EventHandler(this.ButtonCalcDistance_Click);
             // 
             // labelKelvin
             // 

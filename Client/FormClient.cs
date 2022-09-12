@@ -30,7 +30,7 @@ namespace Client
         static ChannelFactory<IAstroContract> pipeFactory = new ChannelFactory<IAstroContract>(
                 new NetNamedPipeBinding(), new EndpointAddress("net.pipe://localhost/AstroServer"));
         IAstroContract pipeProxy = pipeFactory.CreateChannel();
-
+        
         private void ButtonCalcVelocity_Click(object sender, EventArgs e)
         {
             double obs = double.Parse(textBoxObserved.Text);
@@ -38,6 +38,13 @@ namespace Client
             dataGridViewDisplay.Rows.Add("Star Velocity", pipeProxy.StarVelocity(obs, rest), "m/s");
             textBoxObserved.Clear();
             textBoxRest.Clear();
+        }
+
+        private void ButtonCalcDistance_Click(object sender, EventArgs e)
+        {
+            double angle = double.Parse(textBoxAngle.Text);
+            dataGridViewDisplay.Rows.Add("Star Distance", pipeProxy.StarDistance(angle), "parsecs");
+            textBoxAngle.Clear();
         }
 
         // TODO: 7.3. Menu/Button option(s) to change the language and layout for the three different countries.
