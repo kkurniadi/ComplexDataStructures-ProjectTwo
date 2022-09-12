@@ -27,6 +27,7 @@ namespace Client
         IAstroContract pipeProxy = null;
         private void FormClient_Load(object sender, EventArgs e)
         {
+            Thread.CurrentThread.CurrentUICulture = Thread.CurrentThread.CurrentCulture;
             ConnectToServer();
         }
         private void ConnectToServer()
@@ -46,7 +47,7 @@ namespace Client
             double obs = double.Parse(textBoxObserved.Text);
             double rest = double.Parse(textBoxRest.Text);
             double velocity = pipeProxy.StarVelocity(obs, rest);
-            dataGridViewDisplay.Rows.Add("Star Velocity", velocity.ToString("E2", CultureInfo.CurrentCulture), "m/s");
+            dataGridViewDisplay.Rows.Add("Star Velocity", velocity.ToString("E2", CultureInfo.CurrentUICulture), "m/s");
             textBoxObserved.Clear();
             textBoxRest.Clear();
         }
@@ -54,7 +55,7 @@ namespace Client
         {
             double angle = double.Parse(textBoxAngle.Text);
             double distance = pipeProxy.StarDistance(angle);
-            dataGridViewDisplay.Rows.Add("Star Distance", distance.ToString("G3", CultureInfo.CurrentCulture), "parsecs");
+            dataGridViewDisplay.Rows.Add("Star Distance", distance.ToString("G3", CultureInfo.CurrentUICulture), "parsecs");
             textBoxAngle.Clear();
         }
         private void ButtonCalcKelvin_Click(object sender, EventArgs e)
@@ -67,7 +68,7 @@ namespace Client
         {
             double mass = double.Parse(textBoxMass.Text) * Math.Pow(10, (double)numericUpDownMass.Value);
             double radius = pipeProxy.EventHorizon(mass);
-            dataGridViewDisplay.Rows.Add("Event Horizon", radius.ToString("G2", CultureInfo.CurrentCulture), "m");
+            dataGridViewDisplay.Rows.Add("Event Horizon", radius.ToString("G2", CultureInfo.CurrentUICulture), "m");
             textBoxMass.Clear();
         }
         #endregion
