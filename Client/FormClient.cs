@@ -36,6 +36,8 @@ namespace Client
             double obs = double.Parse(textBoxObserved.Text);
             double rest = double.Parse(textBoxRest.Text);
             dataGridViewDisplay.Rows.Add("Star Velocity", pipeProxy.StarVelocity(obs, rest), "m/s");
+            textBoxObserved.Clear();
+            textBoxRest.Clear();
         }
 
         // TODO: 7.3. Menu/Button option(s) to change the language and layout for the three different countries.
