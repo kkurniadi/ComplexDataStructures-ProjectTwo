@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
@@ -9,6 +10,7 @@ using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 // Kirsten Kurniadi, ID: 30045816
 // Date: 5/09/2022
 // Windows .NET Framework Forms application client
@@ -21,6 +23,11 @@ namespace Client
         {
             InitializeComponent();
         }
+        // 7.2. Create a form with suitable components for UI,
+        // a. Series of textboxes for large numeric data,
+        // b. A listview/datagrid for display of processed information from the server,
+        // c. Button(s) to initiate an event and send/receive data.
+
         static ChannelFactory<IAstroContract> pipeFactory = new ChannelFactory<IAstroContract>(
                 new NetNamedPipeBinding(), new EndpointAddress("net.pipe://localhost/AstroServer"));
         IAstroContract pipeProxy = pipeFactory.CreateChannel();
