@@ -326,9 +326,19 @@
             // numericUpDownMass
             // 
             this.numericUpDownMass.Location = new System.Drawing.Point(494, 200);
+            this.numericUpDownMass.Minimum = new decimal(new int[] {
+            25,
+            0,
+            0,
+            0});
             this.numericUpDownMass.Name = "numericUpDownMass";
             this.numericUpDownMass.Size = new System.Drawing.Size(39, 20);
             this.numericUpDownMass.TabIndex = 22;
+            this.numericUpDownMass.Value = new decimal(new int[] {
+            25,
+            0,
+            0,
+            0});
             // 
             // label14
             // 
