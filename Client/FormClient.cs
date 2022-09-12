@@ -71,7 +71,8 @@ namespace Client
             textBoxMass.Clear();
         }
         #endregion
-        // TODO: 7.3. Menu/Button option(s) to change the language and layout for the three different countries.
+        // 7.3. Menu/Button option(s) to change the language and layout for the three different countries.
+        #region LanguageChanging
         private void EnglishToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ChangeLanguage("English");
@@ -102,6 +103,7 @@ namespace Client
             InitializeComponent();
             ConnectToServer();
         }
+        #endregion
         // TODO: 7.4. Menu option to change the form’s style (colours and visual appearance).
 
         // TODO: 7.5. Menu/Button option to select a custom colour from a colour palette (Color Dialogbox)
