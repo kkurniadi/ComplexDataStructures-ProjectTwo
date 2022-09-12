@@ -8,6 +8,7 @@ using System.Globalization;
 using System.Linq;
 using System.ServiceModel;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
@@ -69,19 +70,31 @@ namespace Client
         // TODO: 7.3. Menu/Button option(s) to change the language and layout for the three different countries.
         private void EnglishToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            ChangeLanguage("English");
         }
         private void FrenchToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            ChangeLanguage("French");
         }
         private void GermanToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            ChangeLanguage("German");
         }
         private void ChangeLanguage(string language)
         {
-
+            switch (language)
+            {
+                case "English":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
+                    break;
+                case "French":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr-FR");
+                    break;
+                case "German":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("de-DE");
+                    break;
+            }
+            InitializeComponent();
         }
         // TODO: 7.4. Menu option to change the form’s style (colours and visual appearance).
 
