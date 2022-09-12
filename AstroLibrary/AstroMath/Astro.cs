@@ -22,7 +22,7 @@ namespace AstroMath
         public double StarVelocity(double observedWavelength, double restWavelength)
         {
             double delta = observedWavelength - restWavelength;
-            return 2999792458 * (delta / restWavelength);
+            return 299792458 * (delta / restWavelength);
         }
         /// <summary>
         /// Calculates the star distance, using the parallax angle.
