@@ -66,7 +66,9 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.StatusStrip = new System.Windows.Forms.ToolStripLabel();
+            this.StatusStripConnection = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.StatusStripFeedback = new System.Windows.Forms.ToolStripLabel();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDisplay)).BeginInit();
@@ -389,18 +391,31 @@
             // 
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.StatusStrip});
+            this.StatusStripConnection,
+            this.toolStripSeparator1,
+            this.StatusStripFeedback});
             this.toolStrip1.Location = new System.Drawing.Point(0, 443);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(599, 25);
             this.toolStrip1.TabIndex = 26;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // StatusStrip
+            // StatusStripConnection
             // 
-            this.StatusStrip.Name = "StatusStrip";
-            this.StatusStrip.Size = new System.Drawing.Size(12, 22);
-            this.StatusStrip.Text = "-";
+            this.StatusStripConnection.Name = "StatusStripConnection";
+            this.StatusStripConnection.Size = new System.Drawing.Size(12, 22);
+            this.StatusStripConnection.Text = "-";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // StatusStripFeedback
+            // 
+            this.StatusStripFeedback.Name = "StatusStripFeedback";
+            this.StatusStripFeedback.Size = new System.Drawing.Size(12, 22);
+            this.StatusStripFeedback.Text = "-";
             // 
             // FormClient
             // 
@@ -488,7 +503,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripLabel StatusStrip;
+        private System.Windows.Forms.ToolStripLabel StatusStripConnection;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripLabel StatusStripFeedback;
     }
 }
 
