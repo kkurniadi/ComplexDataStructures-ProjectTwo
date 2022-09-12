@@ -37,12 +37,12 @@
             this.lightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.darkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.customToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelVelocity = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxObserved = new System.Windows.Forms.TextBox();
             this.textBoxRest = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.labelDistance = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -50,18 +50,18 @@
             this.label8 = new System.Windows.Forms.Label();
             this.ButtonCalcVelocity = new System.Windows.Forms.Button();
             this.ButtonCalcDistance = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
+            this.labelKelvin = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.textBoxCelsius = new System.Windows.Forms.TextBox();
             this.ButtonCalcKelvin = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
+            this.labelEventHorizon = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.textBoxMass = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.numericUpDownMass = new System.Windows.Forms.NumericUpDown();
             this.label14 = new System.Windows.Forms.Label();
             this.ButtonCalcEH = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewDisplay = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -69,7 +69,7 @@
             this.StatusStrip = new System.Windows.Forms.ToolStripLabel();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMass)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDisplay)).BeginInit();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -140,15 +140,15 @@
             this.customToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.customToolStripMenuItem.Text = "Custom";
             // 
-            // label1
+            // labelVelocity
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(107, 38);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 16);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Star Velocity";
+            this.labelVelocity.AutoSize = true;
+            this.labelVelocity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelVelocity.Location = new System.Drawing.Point(107, 38);
+            this.labelVelocity.Name = "labelVelocity";
+            this.labelVelocity.Size = new System.Drawing.Size(95, 16);
+            this.labelVelocity.TabIndex = 1;
+            this.labelVelocity.Text = "Star Velocity";
             // 
             // label2
             // 
@@ -182,15 +182,15 @@
             this.textBoxRest.Size = new System.Drawing.Size(100, 20);
             this.textBoxRest.TabIndex = 5;
             // 
-            // label4
+            // labelDistance
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(403, 38);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 16);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Star Distance";
+            this.labelDistance.AutoSize = true;
+            this.labelDistance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDistance.Location = new System.Drawing.Point(403, 38);
+            this.labelDistance.Name = "labelDistance";
+            this.labelDistance.Size = new System.Drawing.Size(100, 16);
+            this.labelDistance.TabIndex = 6;
+            this.labelDistance.Text = "Star Distance";
             // 
             // label5
             // 
@@ -253,15 +253,15 @@
             this.ButtonCalcDistance.Text = "Calculate";
             this.ButtonCalcDistance.UseVisualStyleBackColor = true;
             // 
-            // label9
+            // labelKelvin
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(85, 174);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(158, 16);
-            this.label9.TabIndex = 14;
-            this.label9.Text = "Temperature in Kelvin";
+            this.labelKelvin.AutoSize = true;
+            this.labelKelvin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelKelvin.Location = new System.Drawing.Point(85, 174);
+            this.labelKelvin.Name = "labelKelvin";
+            this.labelKelvin.Size = new System.Drawing.Size(158, 16);
+            this.labelKelvin.TabIndex = 14;
+            this.labelKelvin.Text = "Temperature in Kelvin";
             // 
             // label10
             // 
@@ -288,15 +288,15 @@
             this.ButtonCalcKelvin.Text = "Calculate";
             this.ButtonCalcKelvin.UseVisualStyleBackColor = true;
             // 
-            // label11
+            // labelEventHorizon
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(400, 174);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(103, 16);
-            this.label11.TabIndex = 18;
-            this.label11.Text = "Event Horizon";
+            this.labelEventHorizon.AutoSize = true;
+            this.labelEventHorizon.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEventHorizon.Location = new System.Drawing.Point(400, 174);
+            this.labelEventHorizon.Name = "labelEventHorizon";
+            this.labelEventHorizon.Size = new System.Drawing.Size(103, 16);
+            this.labelEventHorizon.TabIndex = 18;
+            this.labelEventHorizon.Text = "Event Horizon";
             // 
             // label12
             // 
@@ -358,17 +358,17 @@
             this.ButtonCalcEH.Text = "Calculate";
             this.ButtonCalcEH.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dataGridViewDisplay
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewDisplay.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDisplay.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dataGridView1.Location = new System.Drawing.Point(44, 288);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(504, 150);
-            this.dataGridView1.TabIndex = 25;
+            this.dataGridViewDisplay.Location = new System.Drawing.Point(44, 288);
+            this.dataGridViewDisplay.Name = "dataGridViewDisplay";
+            this.dataGridViewDisplay.Size = new System.Drawing.Size(504, 150);
+            this.dataGridViewDisplay.TabIndex = 25;
             // 
             // Column1
             // 
@@ -408,18 +408,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(599, 468);
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewDisplay);
             this.Controls.Add(this.ButtonCalcEH);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.numericUpDownMass);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.textBoxMass);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
+            this.Controls.Add(this.labelEventHorizon);
             this.Controls.Add(this.ButtonCalcKelvin);
             this.Controls.Add(this.textBoxCelsius);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.labelKelvin);
             this.Controls.Add(this.ButtonCalcDistance);
             this.Controls.Add(this.ButtonCalcVelocity);
             this.Controls.Add(this.label8);
@@ -427,12 +427,12 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.labelDistance);
             this.Controls.Add(this.textBoxRest);
             this.Controls.Add(this.textBoxObserved);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelVelocity);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormClient";
@@ -440,7 +440,7 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMass)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDisplay)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -459,12 +459,12 @@
         private System.Windows.Forms.ToolStripMenuItem lightToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem darkToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem customToolStripMenuItem;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelVelocity;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBoxObserved;
         private System.Windows.Forms.TextBox textBoxRest;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labelDistance;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
@@ -472,18 +472,18 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button ButtonCalcVelocity;
         private System.Windows.Forms.Button ButtonCalcDistance;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label labelKelvin;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBoxCelsius;
         private System.Windows.Forms.Button ButtonCalcKelvin;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label labelEventHorizon;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox textBoxMass;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.NumericUpDown numericUpDownMass;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button ButtonCalcEH;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewDisplay;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;

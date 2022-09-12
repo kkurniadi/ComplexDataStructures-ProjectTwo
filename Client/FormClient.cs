@@ -27,12 +27,12 @@ namespace Client
         // a. Series of textboxes for large numeric data,
         // b. A listview/datagrid for display of processed information from the server,
         // c. Button(s) to initiate an event and send/receive data.
-
         static ChannelFactory<IAstroContract> pipeFactory = new ChannelFactory<IAstroContract>(
                 new NetNamedPipeBinding(), new EndpointAddress("net.pipe://localhost/AstroServer"));
         IAstroContract pipeProxy = pipeFactory.CreateChannel();
-        // TODO: 7.3. Menu/Button option(s) to change the language and layout for the three different countries.
 
+        // TODO: 7.3. Menu/Button option(s) to change the language and layout for the three different countries.
+        
         // TODO: 7.4. Menu option to change the form’s style (colours and visual appearance).
 
         // TODO: 7.5. Menu/Button option to select a custom colour from a colour palette (Color Dialogbox)
