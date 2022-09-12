@@ -65,14 +65,24 @@ namespace Client
             dataGridViewDisplay.Rows.Add("Event Horizon", radius.ToString("G2", CultureInfo.CurrentCulture), "m");
             textBoxMass.Clear();
         }
-
+        #endregion
+        // TODO: 7.3. Menu/Button option(s) to change the language and layout for the three different countries.
         private void EnglishToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
-        #endregion
-        // TODO: 7.3. Menu/Button option(s) to change the language and layout for the three different countries.
+        private void FrenchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
 
+        }
+        private void GermanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void ChangeLanguage(string language)
+        {
+
+        }
         // TODO: 7.4. Menu option to change the form’s style (colours and visual appearance).
 
         // TODO: 7.5. Menu/Button option to select a custom colour from a colour palette (Color Dialogbox)

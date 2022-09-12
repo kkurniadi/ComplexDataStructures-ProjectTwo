@@ -103,11 +103,13 @@
             // 
             this.FrenchToolStripMenuItem.Name = "FrenchToolStripMenuItem";
             resources.ApplyResources(this.FrenchToolStripMenuItem, "FrenchToolStripMenuItem");
+            this.FrenchToolStripMenuItem.Click += new System.EventHandler(this.FrenchToolStripMenuItem_Click);
             // 
             // GermanToolStripMenuItem
             // 
             this.GermanToolStripMenuItem.Name = "GermanToolStripMenuItem";
             resources.ApplyResources(this.GermanToolStripMenuItem, "GermanToolStripMenuItem");
+            this.GermanToolStripMenuItem.Click += new System.EventHandler(this.GermanToolStripMenuItem_Click);
             // 
             // themeToolStripMenuItem
             // 
