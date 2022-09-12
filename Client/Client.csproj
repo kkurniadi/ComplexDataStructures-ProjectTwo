@@ -60,6 +60,9 @@
     <Compile Include="IAstroContract.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormClient.de-DE.resx">
+      <DependentUpon>FormClient.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormClient.fr-FR.resx">
       <DependentUpon>FormClient.cs</DependentUpon>
     </EmbeddedResource>
