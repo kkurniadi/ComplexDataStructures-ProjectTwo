@@ -64,7 +64,8 @@ namespace Client
         private void ButtonCalcEH_Click(object sender, EventArgs e)
         {
             double mass = double.Parse(textBoxMass.Text) * Math.Pow(10, (double)numericUpDownMass.Value);
-            dataGridViewDisplay.Rows.Add("Event Horizon", pipeProxy.EventHorizon(mass), "m");
+            double radius = pipeProxy.EventHorizon(mass);
+            dataGridViewDisplay.Rows.Add("Event Horizon", radius.ToString("G2", CultureInfo.CurrentCulture), "m");
             textBoxMass.Clear();
         }
 
