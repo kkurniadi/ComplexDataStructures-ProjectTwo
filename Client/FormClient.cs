@@ -12,7 +12,6 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 // Kirsten Kurniadi, ID: 30045816
 // Date: 5/09/2022
 // Windows .NET Framework Forms application client
@@ -119,10 +118,16 @@ namespace Client
         private void LightToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ChangeTheme("Light");
+            LightToolStripMenuItem.Checked = true;
+            DarkToolStripMenuItem.Checked = false;
+            CustomToolStripMenuItem.Checked = false;
         }
         private void DarkToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ChangeTheme("Dark");
+            DarkToolStripMenuItem.Checked = true;
+            LightToolStripMenuItem.Checked = false;
+            CustomToolStripMenuItem.Checked = false;
         }
         private void ChangeTheme(string themeName)
         {
@@ -131,10 +136,48 @@ namespace Client
                 case "Light":
                     BackColor = DefaultBackColor;
                     ForeColor = DefaultForeColor;
+                    foreach (var button in Controls.OfType<Button>())
+                    {
+                        button.BackColor = SystemColors.Control;
+                        button.ForeColor = SystemColors.ControlText;
+                    }
+                    foreach (var textBox in Controls.OfType<TextBox>())
+                    {
+                        textBox.BackColor = SystemColors.Window;
+                        textBox.ForeColor = SystemColors.WindowText;
+                    }
+                    foreach (var menuStrip in Controls.OfType<MenuStrip>())
+                    {
+                        menuStrip.BackColor = SystemColors.Control;
+                    }
+                    foreach (var menuItem in Controls.OfType<ToolStripMenuItem>())
+                    {
+                        menuItem.BackColor = SystemColors.Control;
+                        menuItem.ForeColor = SystemColors.ControlText;
+                    }
                     break;
                 case "Dark":
                     BackColor = SystemColors.ControlDarkDark;
                     ForeColor = SystemColors.ControlLightLight;
+                    foreach (var button in Controls.OfType<Button>())
+                    {
+                        button.BackColor = SystemColors.ControlDark;
+                        button.ForeColor = SystemColors.ControlLightLight;
+                    }
+                    foreach (var textBox in Controls.OfType<TextBox>())
+                    {
+                        textBox.BackColor = SystemColors.WindowFrame;
+                        textBox.ForeColor = SystemColors.HighlightText;
+                    }
+                    foreach (var menuStrip in Controls.OfType<MenuStrip>())
+                    {
+                        menuStrip.BackColor = SystemColors.ControlDark;
+                    }
+                    foreach (var menuItem in Controls.OfType<ToolStripMenuItem>())
+                    {
+                        menuItem.BackColor = SystemColors.ControlDark;
+                        menuItem.ForeColor = SystemColors.ControlLightLight;
+                    }
                     break;
             }
         }
