@@ -146,6 +146,11 @@ namespace Client
                         textBox.BackColor = SystemColors.Window;
                         textBox.ForeColor = SystemColors.WindowText;
                     }
+                    foreach (var upDown in Controls.OfType<NumericUpDown>())
+                    {
+                        upDown.BackColor = SystemColors.Window;
+                        upDown.ForeColor = SystemColors.WindowText;
+                    }
                     foreach (var menuStrip in Controls.OfType<MenuStrip>())
                     {
                         menuStrip.BackColor = SystemColors.Control;
@@ -168,6 +173,11 @@ namespace Client
                     {
                         textBox.BackColor = SystemColors.WindowFrame;
                         textBox.ForeColor = SystemColors.HighlightText;
+                    }
+                    foreach (var upDown in Controls.OfType<NumericUpDown>())
+                    {
+                        upDown.BackColor = SystemColors.WindowFrame;
+                        upDown.ForeColor = SystemColors.HighlightText;
                     }
                     foreach (var menuStrip in Controls.OfType<MenuStrip>())
                     {
