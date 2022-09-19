@@ -136,6 +136,7 @@
             // 
             this.CustomToolStripMenuItem.Name = "CustomToolStripMenuItem";
             resources.ApplyResources(this.CustomToolStripMenuItem, "CustomToolStripMenuItem");
+            this.CustomToolStripMenuItem.Click += new System.EventHandler(this.CustomToolStripMenuItem_Click);
             // 
             // labelVelocity
             // 

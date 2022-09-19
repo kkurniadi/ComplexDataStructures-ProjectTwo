@@ -192,5 +192,24 @@ namespace Client
             }
         }
         // TODO: 7.5. Menu/Button option to select a custom colour from a colour palette (Color Dialogbox)
+        private void CustomToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ColorDialog colorDlg = new ColorDialog();
+            if (colorDlg.ShowDialog() == DialogResult.OK)
+            {
+                BackColor = colorDlg.Color;
+                byte r = (byte)(255 - BackColor.R);
+                byte g = (byte)(255 - BackColor.G);
+                byte b = (byte)(255 - BackColor.B);
+                ForeColor = Color.FromArgb(r, g, b);
+                foreach (var textBox in Controls.OfType<TextBox>())
+                {
+                    textBox.ForeColor = Color.FromArgb(r, g, b);
+                }
+                CustomToolStripMenuItem.Checked = true;
+                LightToolStripMenuItem.Checked = false;
+                DarkToolStripMenuItem.Checked = false;
+            }
+        }
     }
 }
