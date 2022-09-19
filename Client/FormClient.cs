@@ -135,7 +135,10 @@ namespace Client
             {
                 case "Light":
                     BackColor = DefaultBackColor;
-                    ForeColor = DefaultForeColor;
+                    foreach (var label in Controls.OfType<Label>())
+                    {
+                        label.ForeColor = DefaultForeColor;
+                    }
                     foreach (var button in Controls.OfType<Button>())
                     {
                         button.BackColor = SystemColors.Control;
@@ -155,6 +158,10 @@ namespace Client
                     {
                         menuStrip.BackColor = SystemColors.Control;
                     }
+                    foreach (var toolStrip in Controls.OfType<ToolStrip>())
+                    {
+                        toolStrip.BackColor = SystemColors.Control;
+                    }
                     foreach (var menuItem in Controls.OfType<ToolStripMenuItem>())
                     {
                         menuItem.BackColor = SystemColors.Control;
@@ -163,7 +170,10 @@ namespace Client
                     break;
                 case "Dark":
                     BackColor = SystemColors.ControlDarkDark;
-                    ForeColor = SystemColors.ControlLightLight;
+                    foreach (var label in Controls.OfType<Label>())
+                    {
+                        label.ForeColor = SystemColors.ControlLightLight;
+                    }
                     foreach (var button in Controls.OfType<Button>())
                     {
                         button.BackColor = SystemColors.ControlDark;
@@ -182,6 +192,10 @@ namespace Client
                     foreach (var menuStrip in Controls.OfType<MenuStrip>())
                     {
                         menuStrip.BackColor = SystemColors.ControlDark;
+                    }
+                    foreach (var toolStrip in Controls.OfType<ToolStrip>())
+                    {
+                        toolStrip.BackColor = SystemColors.ControlDark;
                     }
                     foreach (var menuItem in Controls.OfType<ToolStripMenuItem>())
                     {
