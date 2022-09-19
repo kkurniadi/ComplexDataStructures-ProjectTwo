@@ -93,12 +93,21 @@ namespace Client
             {
                 case "English":
                     Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
+                    EnglishToolStripMenuItem.Checked = true;
+                    FrenchToolStripMenuItem.Checked = false;
+                    GermanToolStripMenuItem.Checked = false;
                     break;
                 case "French":
                     Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr-FR");
+                    FrenchToolStripMenuItem.Checked = true;
+                    EnglishToolStripMenuItem.Checked = false;
+                    GermanToolStripMenuItem.Checked = false;
                     break;
                 case "German":
                     Thread.CurrentThread.CurrentUICulture = new CultureInfo("de-DE");
+                    GermanToolStripMenuItem.Checked = true;
+                    EnglishToolStripMenuItem.Checked = false;
+                    FrenchToolStripMenuItem.Checked = false;
                     break;
             }
             Controls.Clear();
