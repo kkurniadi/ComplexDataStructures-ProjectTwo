@@ -162,11 +162,6 @@ namespace Client
                     {
                         toolStrip.BackColor = SystemColors.Control;
                     }
-                    foreach (var menuItem in Controls.OfType<ToolStripMenuItem>())
-                    {
-                        menuItem.BackColor = SystemColors.Control;
-                        menuItem.ForeColor = SystemColors.ControlText;
-                    }
                     break;
                 case "Dark":
                     BackColor = SystemColors.ControlDarkDark;
@@ -191,16 +186,11 @@ namespace Client
                     }
                     foreach (var menuStrip in Controls.OfType<MenuStrip>())
                     {
-                        menuStrip.BackColor = SystemColors.ControlDark;
+                        menuStrip.BackColor = SystemColors.ControlDarkDark;
                     }
                     foreach (var toolStrip in Controls.OfType<ToolStrip>())
                     {
-                        toolStrip.BackColor = SystemColors.ControlDark;
-                    }
-                    foreach (var menuItem in Controls.OfType<ToolStripMenuItem>())
-                    {
-                        menuItem.BackColor = SystemColors.ControlDark;
-                        menuItem.ForeColor = SystemColors.ControlLightLight;
+                        toolStrip.BackColor = SystemColors.ControlDarkDark;
                     }
                     break;
             }
