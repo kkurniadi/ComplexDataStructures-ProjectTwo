@@ -9,6 +9,7 @@ using System.Drawing.Configuration;
 using System.Globalization;
 using System.Linq;
 using System.ServiceModel;
+using System.ServiceModel.Dispatcher;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -37,12 +38,19 @@ namespace Client
             ChannelFactory<IAstroContract> pipeFactory = new ChannelFactory<IAstroContract>(
                 new NetNamedPipeBinding(), new EndpointAddress("net.pipe://localhost/AstroServer"));
             pipeProxy = pipeFactory.CreateChannel();
-            if (CultureInfo.CurrentUICulture.Name == "fr-FR")
-                StatusStripFeedback.Text = "Inactive";
-            else if (CultureInfo.CurrentUICulture.Name == "de-DE")
-                StatusStripFeedback.Text = "Leerlauf";
-            else
-                StatusStripFeedback.Text = "Idle";
+            string lang = CultureInfo.CurrentUICulture.Name;
+            switch (lang)
+            {
+                case "fr-FR":
+                    StatusStripFeedback.Text = "Inactive";
+                    break;
+                case "de-DE":
+                    StatusStripFeedback.Text = "Leerlauf";
+                    break;
+                default:
+                    StatusStripFeedback.Text = "Idle";
+                    break;
+            }
         }
         // 7.2. Create a form with suitable components for UI,
         // a. Series of textboxes for large numeric data,
