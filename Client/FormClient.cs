@@ -191,7 +191,8 @@ namespace Client
             ConnectToServer();
         }
         #endregion
-        // TODO: 7.4. Menu option to change the form’s style (colours and visual appearance).
+        // 7.4. Menu option to change the form’s style (colours and visual appearance).
+        #region StyleChanging
         private void LightToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ChangeTheme("Light");
@@ -256,7 +257,8 @@ namespace Client
                     break;
             }
         }
-        // TODO: 7.5. Menu/Button option to select a custom colour from a colour palette (Color Dialogbox)
+        #endregion
+        // 7.5. Menu/Button option to select a custom colour from a colour palette (Color Dialogbox)
         private void CustomToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ColorDialog colorDlg = new ColorDialog();
