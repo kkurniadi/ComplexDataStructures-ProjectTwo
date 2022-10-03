@@ -113,7 +113,20 @@ namespace Client
         {
             double mass = double.Parse(textBoxMass.Text) * Math.Pow(10, (double)numericUpDownMass.Value);
             double radius = pipeProxy.EventHorizon(mass);
-            dataGridViewDisplay.Rows.Add("Event Horizon", radius.ToString("G2", CultureInfo.CurrentUICulture), "m");
+            string[] row = new string[] { "Event Horizon", radius.ToString("G2", CultureInfo.CurrentUICulture), "m" };
+            if (CultureInfo.CurrentUICulture.Name == "fr-FR")
+            {
+                row[0] = "Horizon des événements";
+                StatusStripFeedback.Text = "Calculé l'horizon des événements";
+            }
+            else if (CultureInfo.CurrentUICulture.Name == "de-DE")
+            {
+                row[0] = "Ereignishorizont";
+                StatusStripFeedback.Text = "Berechnete den Ereignishorizont";
+            }
+            else
+                StatusStripFeedback.Text = "Calculated the event horizon";
+            dataGridViewDisplay.Rows.Add(row);
             textBoxMass.Clear();
         }
         #endregion
