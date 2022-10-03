@@ -138,18 +138,21 @@ namespace Client
                     double celsius = double.Parse(textBoxCelsius.Text);
                     double kelvin = pipeProxy.TempInKelvin(celsius);
                     string[] row = new string[] { "Temp in Kelvin", kelvin.ToString(CultureInfo.CurrentUICulture), "K" };
-                    if (CultureInfo.CurrentUICulture.Name == "fr-FR")
+                    string lang = CultureInfo.CurrentUICulture.Name;
+                    switch (lang)
                     {
-                        row[0] = "Température en Kelvin";
-                        StatusStripFeedback.Text = "Calculer la température en Kelvin";
+                        case "fr-FR":
+                            row[0] = "Température en Kelvin";
+                            StatusStripFeedback.Text = "Calculer la température en Kelvin";
+                            break;
+                        case "de-DE":
+                            row[0] = "Temperatur in Kelvin";
+                            StatusStripFeedback.Text = "Berechnete die Temperatur in Kelvin";
+                            break;
+                        default:
+                            StatusStripFeedback.Text = "Calculated the temperature in Kelvin";
+                            break;
                     }
-                    else if (CultureInfo.CurrentUICulture.Name == "de-DE")
-                    {
-                        row[0] = "Temperatur in Kelvin";
-                        StatusStripFeedback.Text = "Berechnete die Temperatur in Kelvin";
-                    }
-                    else
-                        StatusStripFeedback.Text = "Calculated the temperature in Kelvin";
                     dataGridViewDisplay.Rows.Add(row);
                     textBoxCelsius.Clear();
                 }
@@ -170,18 +173,21 @@ namespace Client
                     double mass = double.Parse(textBoxMass.Text) * Math.Pow(10, (double)numericUpDownMass.Value);
                     double radius = pipeProxy.EventHorizon(mass);
                     string[] row = new string[] { "Event Horizon", radius.ToString("G2", CultureInfo.CurrentUICulture), "m" };
-                    if (CultureInfo.CurrentUICulture.Name == "fr-FR")
+                    string lang = CultureInfo.CurrentUICulture.Name;
+                    switch (lang)
                     {
-                        row[0] = "Horizon des événements";
-                        StatusStripFeedback.Text = "Calculé l'horizon des événements";
+                        case "fr-FR":
+                            row[0] = "Horizon des événements";
+                            StatusStripFeedback.Text = "Calculé l'horizon des événements";
+                            break;
+                        case "de-DE":
+                            row[0] = "Ereignishorizont";
+                            StatusStripFeedback.Text = "Berechnete den Ereignishorizont";
+                            break;
+                        default:
+                            StatusStripFeedback.Text = "Calculated the event horizon";
+                            break;
                     }
-                    else if (CultureInfo.CurrentUICulture.Name == "de-DE")
-                    {
-                        row[0] = "Ereignishorizont";
-                        StatusStripFeedback.Text = "Berechnete den Ereignishorizont";
-                    }
-                    else
-                        StatusStripFeedback.Text = "Calculated the event horizon";
                     dataGridViewDisplay.Rows.Add(row);
                     textBoxMass.Clear();
                 }
