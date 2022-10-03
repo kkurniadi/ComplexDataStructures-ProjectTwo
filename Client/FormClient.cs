@@ -299,7 +299,11 @@ namespace Client
         }
         void FormClient_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar) || e.KeyChar == (char)Keys.OemPeriod)
+            if (!(char.IsDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.OemPeriod))
+            {
+                e.Handled = true;
+            }
+            if (e.KeyChar == (char)Keys.OemPeriod && (sender as TextBox).Text.IndexOf((char)Keys.OemPeriod) > -1)
             {
                 e.Handled = true;
             }
