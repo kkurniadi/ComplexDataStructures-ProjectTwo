@@ -103,18 +103,21 @@ namespace Client
                     double angle = double.Parse(textBoxAngle.Text);
                     double distance = pipeProxy.StarDistance(angle);
                     string[] row = new string[] { "Star Distance", distance.ToString("G3", CultureInfo.CurrentUICulture), "parsecs" };
-                    if (CultureInfo.CurrentUICulture.Name == "fr-FR")
+                    string lang = CultureInfo.CurrentUICulture.Name;
+                    switch (lang)
                     {
-                        row[0] = "Distance Étoile";
-                        StatusStripFeedback.Text = "Calculé la distance des étoiles";
+                        case "fr-FR":
+                            row[0] = "Distance Étoile";
+                            StatusStripFeedback.Text = "Calculé la distance des étoiles";
+                            break;
+                        case "de-DE":
+                            row[0] = "Sternenentfernung";
+                            StatusStripFeedback.Text = "Berechnete die Sternentfernung";
+                            break;
+                        default:
+                            StatusStripFeedback.Text = "Calculated the star distance";
+                            break;
                     }
-                    else if (CultureInfo.CurrentUICulture.Name == "de-DE")
-                    {
-                        row[0] = "Sternenentfernung";
-                        StatusStripFeedback.Text = "Berechnete die Sternentfernung";
-                    }
-                    else
-                        StatusStripFeedback.Text = "Calculated the star distance";
                     dataGridViewDisplay.Rows.Add(row);
                     textBoxAngle.Clear();
                 }
