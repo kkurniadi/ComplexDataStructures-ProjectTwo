@@ -64,9 +64,7 @@ namespace Client
                 StatusStripFeedback.Text = "Berechnete die Sterngeschwindigkeit";
             }
             else
-            {
                 StatusStripFeedback.Text = "Calculated the star velocity";
-            }
             dataGridViewDisplay.Rows.Add(row);
             textBoxObserved.Clear();
             textBoxRest.Clear();
@@ -75,7 +73,20 @@ namespace Client
         {
             double angle = double.Parse(textBoxAngle.Text);
             double distance = pipeProxy.StarDistance(angle);
-            dataGridViewDisplay.Rows.Add("Star Distance", distance.ToString("G3", CultureInfo.CurrentUICulture), "parsecs");
+            string[] row = new string[] { "Star Distance", distance.ToString("G3", CultureInfo.CurrentUICulture), "parsecs" };
+            if (CultureInfo.CurrentUICulture.Name == "fr-FR")
+            {
+                row[0] = "Distance Étoile";
+                StatusStripFeedback.Text = "Calculé la distance des étoiles";
+            }
+            else if (CultureInfo.CurrentUICulture.Name == "de-DE")
+            {
+                row[0] = "Sternenentfernung";
+                StatusStripFeedback.Text = "Berechnete die Sternentfernung";
+            }
+            else
+                StatusStripFeedback.Text = "Calculated the star distance";
+            dataGridViewDisplay.Rows.Add(row);
             textBoxAngle.Clear();
         }
         private void ButtonCalcKelvin_Click(object sender, EventArgs e)
