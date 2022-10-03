@@ -141,7 +141,7 @@ namespace Client
                     }
                     foreach (var button in Controls.OfType<Button>())
                     {
-                        button.BackColor = SystemColors.Control;
+                        button.BackColor = SystemColors.ButtonFace;
                         button.ForeColor = SystemColors.ControlText;
                     }
                     foreach (var textBox in Controls.OfType<TextBox>())
@@ -205,9 +205,18 @@ namespace Client
                 byte r = (byte)(255 - BackColor.R);
                 byte g = (byte)(255 - BackColor.G);
                 byte b = (byte)(255 - BackColor.B);
-                ForeColor = Color.FromArgb(r, g, b);
+                foreach (var label in Controls.OfType<Label>())
+                {
+                    label.ForeColor = Color.FromArgb(r, g, b);
+                }
+                foreach (var button in Controls.OfType<Button>())
+                {
+                    button.BackColor = colorDlg.Color;
+                    button.ForeColor = Color.FromArgb(r, g, b);
+                }
                 foreach (var textBox in Controls.OfType<TextBox>())
                 {
+                    textBox.BackColor = colorDlg.Color;
                     textBox.ForeColor = Color.FromArgb(r, g, b);
                 }
                 CustomToolStripMenuItem.Checked = true;
