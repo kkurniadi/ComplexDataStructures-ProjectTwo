@@ -44,7 +44,7 @@ namespace Client
         }
         private void PromptForConnection()
         {
-            StatusStripFeedback.Text = "Disconnected";
+            MessageBox.Show("Please open the server application and try again");
         }
         // 7.2. Create a form with suitable components for UI,
         // a. Series of textboxes for large numeric data,
