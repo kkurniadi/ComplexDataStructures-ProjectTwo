@@ -149,23 +149,35 @@ namespace Client
         }
         private void ButtonCalcEH_Click(object sender, EventArgs e)
         {
-            double mass = double.Parse(textBoxMass.Text) * Math.Pow(10, (double)numericUpDownMass.Value);
-            double radius = pipeProxy.EventHorizon(mass);
-            string[] row = new string[] { "Event Horizon", radius.ToString("G2", CultureInfo.CurrentUICulture), "m" };
-            if (CultureInfo.CurrentUICulture.Name == "fr-FR")
+            try
             {
-                row[0] = "Horizon des événements";
-                StatusStripFeedback.Text = "Calculé l'horizon des événements";
+                if (!string.IsNullOrEmpty(textBoxMass.Text))
+                {
+                    double mass = double.Parse(textBoxMass.Text) * Math.Pow(10, (double)numericUpDownMass.Value);
+                    double radius = pipeProxy.EventHorizon(mass);
+                    string[] row = new string[] { "Event Horizon", radius.ToString("G2", CultureInfo.CurrentUICulture), "m" };
+                    if (CultureInfo.CurrentUICulture.Name == "fr-FR")
+                    {
+                        row[0] = "Horizon des événements";
+                        StatusStripFeedback.Text = "Calculé l'horizon des événements";
+                    }
+                    else if (CultureInfo.CurrentUICulture.Name == "de-DE")
+                    {
+                        row[0] = "Ereignishorizont";
+                        StatusStripFeedback.Text = "Berechnete den Ereignishorizont";
+                    }
+                    else
+                        StatusStripFeedback.Text = "Calculated the event horizon";
+                    dataGridViewDisplay.Rows.Add(row);
+                    textBoxMass.Clear();
+                }
+                else
+                    PromptForInput();
             }
-            else if (CultureInfo.CurrentUICulture.Name == "de-DE")
+            catch (EndpointNotFoundException)
             {
-                row[0] = "Ereignishorizont";
-                StatusStripFeedback.Text = "Berechnete den Ereignishorizont";
+                PromptForConnection();
             }
-            else
-                StatusStripFeedback.Text = "Calculated the event horizon";
-            dataGridViewDisplay.Rows.Add(row);
-            textBoxMass.Clear();
         }
         #endregion
         // 7.3. Menu/Button option(s) to change the language and layout for the three different countries.
