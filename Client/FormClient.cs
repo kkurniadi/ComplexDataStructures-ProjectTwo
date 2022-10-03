@@ -87,23 +87,35 @@ namespace Client
         }
         private void ButtonCalcDistance_Click(object sender, EventArgs e)
         {
-            double angle = double.Parse(textBoxAngle.Text);
-            double distance = pipeProxy.StarDistance(angle);
-            string[] row = new string[] { "Star Distance", distance.ToString("G3", CultureInfo.CurrentUICulture), "parsecs" };
-            if (CultureInfo.CurrentUICulture.Name == "fr-FR")
+            try
             {
-                row[0] = "Distance Étoile";
-                StatusStripFeedback.Text = "Calculé la distance des étoiles";
+                if (!string.IsNullOrEmpty(textBoxAngle.Text))
+                {
+                    double angle = double.Parse(textBoxAngle.Text);
+                    double distance = pipeProxy.StarDistance(angle);
+                    string[] row = new string[] { "Star Distance", distance.ToString("G3", CultureInfo.CurrentUICulture), "parsecs" };
+                    if (CultureInfo.CurrentUICulture.Name == "fr-FR")
+                    {
+                        row[0] = "Distance Étoile";
+                        StatusStripFeedback.Text = "Calculé la distance des étoiles";
+                    }
+                    else if (CultureInfo.CurrentUICulture.Name == "de-DE")
+                    {
+                        row[0] = "Sternenentfernung";
+                        StatusStripFeedback.Text = "Berechnete die Sternentfernung";
+                    }
+                    else
+                        StatusStripFeedback.Text = "Calculated the star distance";
+                    dataGridViewDisplay.Rows.Add(row);
+                    textBoxAngle.Clear();
+                }
+                else
+                    PromptForInput();
             }
-            else if (CultureInfo.CurrentUICulture.Name == "de-DE")
+            catch (EndpointNotFoundException)
             {
-                row[0] = "Sternenentfernung";
-                StatusStripFeedback.Text = "Berechnete die Sternentfernung";
+                PromptForConnection();
             }
-            else
-                StatusStripFeedback.Text = "Calculated the star distance";
-            dataGridViewDisplay.Rows.Add(row);
-            textBoxAngle.Clear();
         }
         private void ButtonCalcKelvin_Click(object sender, EventArgs e)
         {
