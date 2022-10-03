@@ -35,7 +35,12 @@ namespace Client
             ChannelFactory<IAstroContract> pipeFactory = new ChannelFactory<IAstroContract>(
                 new NetNamedPipeBinding(), new EndpointAddress("net.pipe://localhost/AstroServer"));
             pipeProxy = pipeFactory.CreateChannel();
-            StatusStripConnection.Text = "Idle";
+            if (CultureInfo.CurrentUICulture.Name == "fr-FR")
+                StatusStripConnection.Text = "Inactive";
+            else if (CultureInfo.CurrentUICulture.Name == "de-DE")
+                StatusStripConnection.Text = "Leerlauf";
+            else
+                StatusStripConnection.Text = "Idle";
         }
         // 7.2. Create a form with suitable components for UI,
         // a. Series of textboxes for large numeric data,
