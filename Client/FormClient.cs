@@ -76,9 +76,7 @@ namespace Client
                     textBoxRest.Clear();
                 }
                 else
-                {
                     PromptForInput();
-                }
             }
             catch (EndpointNotFoundException)
             {
@@ -119,23 +117,35 @@ namespace Client
         }
         private void ButtonCalcKelvin_Click(object sender, EventArgs e)
         {
-            double celsius = double.Parse(textBoxCelsius.Text);
-            double kelvin = pipeProxy.TempInKelvin(celsius);
-            string[] row = new string[] { "Temp in Kelvin", kelvin.ToString(CultureInfo.CurrentUICulture), "K" };
-            if (CultureInfo.CurrentUICulture.Name == "fr-FR")
+            try
             {
-                row[0] = "Température en Kelvin";
-                StatusStripFeedback.Text = "Calculer la température en Kelvin";
+                if (!string.IsNullOrEmpty(textBoxCelsius.Text))
+                {
+                    double celsius = double.Parse(textBoxCelsius.Text);
+                    double kelvin = pipeProxy.TempInKelvin(celsius);
+                    string[] row = new string[] { "Temp in Kelvin", kelvin.ToString(CultureInfo.CurrentUICulture), "K" };
+                    if (CultureInfo.CurrentUICulture.Name == "fr-FR")
+                    {
+                        row[0] = "Température en Kelvin";
+                        StatusStripFeedback.Text = "Calculer la température en Kelvin";
+                    }
+                    else if (CultureInfo.CurrentUICulture.Name == "de-DE")
+                    {
+                        row[0] = "Temperatur in Kelvin";
+                        StatusStripFeedback.Text = "Berechnete die Temperatur in Kelvin";
+                    }
+                    else
+                        StatusStripFeedback.Text = "Calculated the temperature in Kelvin";
+                    dataGridViewDisplay.Rows.Add(row);
+                    textBoxCelsius.Clear();
+                }
+                else
+                    PromptForInput();
             }
-            else if (CultureInfo.CurrentUICulture.Name == "de-DE")
+            catch (EndpointNotFoundException)
             {
-                row[0] = "Temperatur in Kelvin";
-                StatusStripFeedback.Text = "Berechnete die Temperatur in Kelvin";
+                PromptForConnection();
             }
-            else
-                StatusStripFeedback.Text = "Calculated the temperature in Kelvin";
-            dataGridViewDisplay.Rows.Add(row);
-            textBoxCelsius.Clear();
         }
         private void ButtonCalcEH_Click(object sender, EventArgs e)
         {
