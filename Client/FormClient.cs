@@ -67,18 +67,21 @@ namespace Client
                     double rest = double.Parse(textBoxRest.Text);
                     double velocity = pipeProxy.StarVelocity(obs, rest);
                     string[] row = new string[] { "Star Velocity", velocity.ToString("E2", CultureInfo.CurrentUICulture), "m/s" };
-                    if (CultureInfo.CurrentUICulture.Name == "fr-FR")
+                    string lang = CultureInfo.CurrentUICulture.Name;
+                    switch (lang)
                     {
-                        row[0] = "Vitesse des Étoiles";
-                        StatusStripFeedback.Text = "Calculé la vitesse de l'étoile";
+                        case "fr-FR":
+                            row[0] = "Vitesse des Étoiles";
+                            StatusStripFeedback.Text = "Calculé la vitesse de l'étoile";
+                            break;
+                        case "de-DE":
+                            row[0] = "Sterngeschwindigkeit";
+                            StatusStripFeedback.Text = "Berechnete die Sterngeschwindigkeit";
+                            break;
+                        default:
+                            StatusStripFeedback.Text = "Calculated the star velocity";
+                            break;
                     }
-                    else if (CultureInfo.CurrentUICulture.Name == "de-DE")
-                    {
-                        row[0] = "Sterngeschwindigkeit";
-                        StatusStripFeedback.Text = "Berechnete die Sterngeschwindigkeit";
-                    }
-                    else
-                        StatusStripFeedback.Text = "Calculated the star velocity";
                     dataGridViewDisplay.Rows.Add(row);
                     textBoxObserved.Clear();
                     textBoxRest.Clear();
