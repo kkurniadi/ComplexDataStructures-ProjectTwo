@@ -23,6 +23,7 @@ namespace Client
         public FormClient()
         {
             InitializeComponent();
+            KeyPress += new KeyPressEventHandler(FormClient_KeyPress); 
         }
         IAstroContract pipeProxy = null;
         private void FormClient_Load(object sender, EventArgs e)
@@ -295,6 +296,13 @@ namespace Client
         private void PromptForInput()
         {
             MessageBox.Show("Please fill the appropriate boxes out correctly");
+        }
+        void FormClient_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) || e.KeyChar == (char)Keys.OemPeriod)
+            {
+                e.Handled = true;
+            }
         }
         #endregion
     }
