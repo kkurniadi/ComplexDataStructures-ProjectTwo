@@ -93,7 +93,7 @@ namespace Client
         {
             double celsius = double.Parse(textBoxCelsius.Text);
             double kelvin = pipeProxy.TempInKelvin(celsius);
-            string[] row = new string[] { "Temp in Kelvin", kelvin.ToString(), "K" };
+            string[] row = new string[] { "Temp in Kelvin", kelvin.ToString(CultureInfo.CurrentUICulture), "K" };
             if (CultureInfo.CurrentUICulture.Name == "fr-FR")
             {
                 row[0] = "Température en Kelvin";
