@@ -161,6 +161,7 @@
             // 
             resources.ApplyResources(this.textBoxRest, "textBoxRest");
             this.textBoxRest.Name = "textBoxRest";
+            this.textBoxRest.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormClient_KeyPress);
             // 
             // labelDistance
             // 
@@ -186,6 +187,7 @@
             // 
             resources.ApplyResources(this.textBoxAngle, "textBoxAngle");
             this.textBoxAngle.Name = "textBoxAngle";
+            this.textBoxAngle.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormClient_KeyPress);
             // 
             // label8
             // 
@@ -220,6 +222,7 @@
             // 
             resources.ApplyResources(this.textBoxCelsius, "textBoxCelsius");
             this.textBoxCelsius.Name = "textBoxCelsius";
+            this.textBoxCelsius.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormClient_KeyPress);
             // 
             // ButtonCalcKelvin
             // 
@@ -242,6 +245,7 @@
             // 
             resources.ApplyResources(this.textBoxMass, "textBoxMass");
             this.textBoxMass.Name = "textBoxMass";
+            this.textBoxMass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormClient_KeyPress);
             // 
             // label13
             // 
