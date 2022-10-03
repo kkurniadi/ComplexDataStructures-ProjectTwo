@@ -53,7 +53,7 @@ namespace Client
         {
             try
             {
-                if (!string.IsNullOrEmpty(textBoxObserved.Text) || !string.IsNullOrEmpty(textBoxRest.Text))
+                if (!string.IsNullOrEmpty(textBoxObserved.Text) && !string.IsNullOrEmpty(textBoxRest.Text))
                 {
                     double obs = double.Parse(textBoxObserved.Text);
                     double rest = double.Parse(textBoxRest.Text);
