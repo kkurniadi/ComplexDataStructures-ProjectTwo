@@ -53,7 +53,7 @@ namespace Client
         {
             try
             {
-                if (!string.IsNullOrEmpty(textBoxObserved.Text) && !string.IsNullOrEmpty(textBoxRest.Text))
+                if (!string.IsNullOrEmpty(textBoxObserved.Text) || !string.IsNullOrEmpty(textBoxRest.Text))
                 {
                     double obs = double.Parse(textBoxObserved.Text);
                     double rest = double.Parse(textBoxRest.Text);
@@ -72,13 +72,13 @@ namespace Client
                     else
                         StatusStripFeedback.Text = "Calculated the star velocity";
                     dataGridViewDisplay.Rows.Add(row);
+                    textBoxObserved.Clear();
+                    textBoxRest.Clear();
                 }
-                textBoxObserved.Clear();
-                textBoxRest.Clear();
-            }
-            catch (FormatException)
-            {
-                PromptForInput();
+                else
+                {
+                    PromptForInput();
+                }
             }
             catch (EndpointNotFoundException)
             {
@@ -296,7 +296,7 @@ namespace Client
         }
         private void PromptForInput()
         {
-            MessageBox.Show("Please fill the appropriate boxes out correctly");
+            MessageBox.Show("Please fill the appropriate boxes and try again");
         }
         
         void FormClient_KeyPress(object sender, KeyPressEventArgs e)
