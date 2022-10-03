@@ -76,64 +76,64 @@
             // 
             // menuStrip1
             // 
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.LangToolStripMenuItem,
             this.themeToolStripMenuItem});
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             // 
             // LangToolStripMenuItem
             // 
+            resources.ApplyResources(this.LangToolStripMenuItem, "LangToolStripMenuItem");
             this.LangToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.EnglishToolStripMenuItem,
             this.FrenchToolStripMenuItem,
             this.GermanToolStripMenuItem});
             this.LangToolStripMenuItem.Name = "LangToolStripMenuItem";
-            resources.ApplyResources(this.LangToolStripMenuItem, "LangToolStripMenuItem");
             // 
             // EnglishToolStripMenuItem
             // 
-            this.EnglishToolStripMenuItem.Name = "EnglishToolStripMenuItem";
             resources.ApplyResources(this.EnglishToolStripMenuItem, "EnglishToolStripMenuItem");
+            this.EnglishToolStripMenuItem.Name = "EnglishToolStripMenuItem";
             this.EnglishToolStripMenuItem.Click += new System.EventHandler(this.EnglishToolStripMenuItem_Click);
             // 
             // FrenchToolStripMenuItem
             // 
-            this.FrenchToolStripMenuItem.Name = "FrenchToolStripMenuItem";
             resources.ApplyResources(this.FrenchToolStripMenuItem, "FrenchToolStripMenuItem");
+            this.FrenchToolStripMenuItem.Name = "FrenchToolStripMenuItem";
             this.FrenchToolStripMenuItem.Click += new System.EventHandler(this.FrenchToolStripMenuItem_Click);
             // 
             // GermanToolStripMenuItem
             // 
-            this.GermanToolStripMenuItem.Name = "GermanToolStripMenuItem";
             resources.ApplyResources(this.GermanToolStripMenuItem, "GermanToolStripMenuItem");
+            this.GermanToolStripMenuItem.Name = "GermanToolStripMenuItem";
             this.GermanToolStripMenuItem.Click += new System.EventHandler(this.GermanToolStripMenuItem_Click);
             // 
             // themeToolStripMenuItem
             // 
+            resources.ApplyResources(this.themeToolStripMenuItem, "themeToolStripMenuItem");
             this.themeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.LightToolStripMenuItem,
             this.DarkToolStripMenuItem,
             this.CustomToolStripMenuItem});
             this.themeToolStripMenuItem.Name = "themeToolStripMenuItem";
-            resources.ApplyResources(this.themeToolStripMenuItem, "themeToolStripMenuItem");
             // 
             // LightToolStripMenuItem
             // 
-            this.LightToolStripMenuItem.Name = "LightToolStripMenuItem";
             resources.ApplyResources(this.LightToolStripMenuItem, "LightToolStripMenuItem");
+            this.LightToolStripMenuItem.Name = "LightToolStripMenuItem";
             this.LightToolStripMenuItem.Click += new System.EventHandler(this.LightToolStripMenuItem_Click);
             // 
             // DarkToolStripMenuItem
             // 
-            this.DarkToolStripMenuItem.Name = "DarkToolStripMenuItem";
             resources.ApplyResources(this.DarkToolStripMenuItem, "DarkToolStripMenuItem");
+            this.DarkToolStripMenuItem.Name = "DarkToolStripMenuItem";
             this.DarkToolStripMenuItem.Click += new System.EventHandler(this.DarkToolStripMenuItem_Click);
             // 
             // CustomToolStripMenuItem
             // 
-            this.CustomToolStripMenuItem.Name = "CustomToolStripMenuItem";
             resources.ApplyResources(this.CustomToolStripMenuItem, "CustomToolStripMenuItem");
+            this.CustomToolStripMenuItem.Name = "CustomToolStripMenuItem";
             this.CustomToolStripMenuItem.Click += new System.EventHandler(this.CustomToolStripMenuItem_Click);
             // 
             // labelVelocity
@@ -276,12 +276,12 @@
             // 
             // dataGridViewDisplay
             // 
+            resources.ApplyResources(this.dataGridViewDisplay, "dataGridViewDisplay");
             this.dataGridViewDisplay.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewDisplay.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3});
-            resources.ApplyResources(this.dataGridViewDisplay, "dataGridViewDisplay");
             this.dataGridViewDisplay.Name = "dataGridViewDisplay";
             // 
             // Column1
@@ -308,8 +308,8 @@
             // 
             // StatusStripFeedback
             // 
-            this.StatusStripFeedback.Name = "StatusStripFeedback";
             resources.ApplyResources(this.StatusStripFeedback, "StatusStripFeedback");
+            this.StatusStripFeedback.Name = "StatusStripFeedback";
             // 
             // FormClient
             // 
