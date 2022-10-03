@@ -42,6 +42,10 @@ namespace Client
             else
                 StatusStripConnection.Text = "Idle";
         }
+        private void PromptForConnection()
+        {
+            StatusStripConnection.Text = "Disconnected";
+        }
         // 7.2. Create a form with suitable components for UI,
         // a. Series of textboxes for large numeric data,
         // b. A listview/datagrid for display of processed information from the server,
@@ -49,25 +53,32 @@ namespace Client
         #region CalcButtonMethods
         private void ButtonCalcVelocity_Click(object sender, EventArgs e)
         {
-            double obs = double.Parse(textBoxObserved.Text);
-            double rest = double.Parse(textBoxRest.Text);
-            double velocity = pipeProxy.StarVelocity(obs, rest);
-            string[] row = new string[] { "Star Velocity", velocity.ToString("E2", CultureInfo.CurrentUICulture), "m/s" };
-            if (CultureInfo.CurrentUICulture.Name == "fr-FR")
+            try
             {
-                row[0] = "Vitesse des Étoiles";
-                StatusStripFeedback.Text = "Calculé la vitesse de l'étoile";
+                double obs = double.Parse(textBoxObserved.Text);
+                double rest = double.Parse(textBoxRest.Text);
+                double velocity = pipeProxy.StarVelocity(obs, rest);
+                string[] row = new string[] { "Star Velocity", velocity.ToString("E2", CultureInfo.CurrentUICulture), "m/s" };
+                if (CultureInfo.CurrentUICulture.Name == "fr-FR")
+                {
+                    row[0] = "Vitesse des Étoiles";
+                    StatusStripFeedback.Text = "Calculé la vitesse de l'étoile";
+                }
+                else if (CultureInfo.CurrentUICulture.Name == "de-DE")
+                {
+                    row[0] = "Sterngeschwindigkeit";
+                    StatusStripFeedback.Text = "Berechnete die Sterngeschwindigkeit";
+                }
+                else
+                    StatusStripFeedback.Text = "Calculated the star velocity";
+                dataGridViewDisplay.Rows.Add(row);
+                textBoxObserved.Clear();
+                textBoxRest.Clear();
             }
-            else if (CultureInfo.CurrentUICulture.Name == "de-DE")
+            catch (EndpointNotFoundException)
             {
-                row[0] = "Sterngeschwindigkeit";
-                StatusStripFeedback.Text = "Berechnete die Sterngeschwindigkeit";
+                PromptForConnection();
             }
-            else
-                StatusStripFeedback.Text = "Calculated the star velocity";
-            dataGridViewDisplay.Rows.Add(row);
-            textBoxObserved.Clear();
-            textBoxRest.Clear();
         }
         private void ButtonCalcDistance_Click(object sender, EventArgs e)
         {
