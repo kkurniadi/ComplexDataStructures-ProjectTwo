@@ -25,7 +25,7 @@ namespace Client
         public FormClient()
         {
             InitializeComponent();
-            KeyPress += new KeyPressEventHandler(FormClient_KeyPress); 
+            KeyPress += new KeyPressEventHandler(TextBoxes_KeyPress); 
         }
         IAstroContract pipeProxy = null;
         private void FormClient_Load(object sender, EventArgs e)
@@ -353,7 +353,7 @@ namespace Client
             MessageBox.Show("Please fill the appropriate boxes and try again");
         }
         
-        void FormClient_KeyPress(object sender, KeyPressEventArgs e)
+        private void TextBoxes_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back
                 && e.KeyChar != 46 && e.KeyChar != 44)

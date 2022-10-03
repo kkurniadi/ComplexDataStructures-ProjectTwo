@@ -155,13 +155,13 @@
             // 
             resources.ApplyResources(this.textBoxObserved, "textBoxObserved");
             this.textBoxObserved.Name = "textBoxObserved";
-            this.textBoxObserved.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormClient_KeyPress);
+            this.textBoxObserved.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxes_KeyPress);
             // 
             // textBoxRest
             // 
             resources.ApplyResources(this.textBoxRest, "textBoxRest");
             this.textBoxRest.Name = "textBoxRest";
-            this.textBoxRest.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormClient_KeyPress);
+            this.textBoxRest.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxes_KeyPress);
             // 
             // labelDistance
             // 
@@ -187,7 +187,7 @@
             // 
             resources.ApplyResources(this.textBoxAngle, "textBoxAngle");
             this.textBoxAngle.Name = "textBoxAngle";
-            this.textBoxAngle.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormClient_KeyPress);
+            this.textBoxAngle.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxes_KeyPress);
             // 
             // label8
             // 
@@ -222,7 +222,7 @@
             // 
             resources.ApplyResources(this.textBoxCelsius, "textBoxCelsius");
             this.textBoxCelsius.Name = "textBoxCelsius";
-            this.textBoxCelsius.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormClient_KeyPress);
+            this.textBoxCelsius.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxes_KeyPress);
             // 
             // ButtonCalcKelvin
             // 
@@ -245,7 +245,7 @@
             // 
             resources.ApplyResources(this.textBoxMass, "textBoxMass");
             this.textBoxMass.Name = "textBoxMass";
-            this.textBoxMass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormClient_KeyPress);
+            this.textBoxMass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxes_KeyPress);
             // 
             // label13
             // 
