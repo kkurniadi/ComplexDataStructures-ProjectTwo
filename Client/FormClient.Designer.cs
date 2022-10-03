@@ -155,6 +155,7 @@
             // 
             resources.ApplyResources(this.textBoxObserved, "textBoxObserved");
             this.textBoxObserved.Name = "textBoxObserved";
+            this.textBoxObserved.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FormClient_KeyPress);
             // 
             // textBoxRest
             // 
@@ -342,7 +343,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.labelVelocity);
             this.Controls.Add(this.menuStrip1);
-            this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormClient";
             this.Load += new System.EventHandler(this.FormClient_Load);

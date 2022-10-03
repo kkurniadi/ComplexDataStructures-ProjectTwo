@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Drawing.Configuration;
 using System.Globalization;
@@ -297,15 +298,20 @@ namespace Client
         {
             MessageBox.Show("Please fill the appropriate boxes out correctly");
         }
+        
         void FormClient_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!(char.IsDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.OemPeriod))
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back
+                && e.KeyChar != 46 && e.KeyChar != 44)
             {
                 e.Handled = true;
             }
-            if (e.KeyChar == (char)Keys.OemPeriod && (sender as TextBox).Text.IndexOf((char)Keys.OemPeriod) > -1)
+            if (e.KeyChar == 46 || e.KeyChar == 44)
             {
-                e.Handled = true;
+                if ((sender as TextBox).Text.IndexOf((char)46) > -1 || (sender as TextBox).Text.IndexOf((char)44) > -1)
+                {
+                    e.Handled = true;
+                }
             }
         }
         #endregion
