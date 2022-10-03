@@ -146,19 +146,19 @@
     <value>Language</value>
   </data>
   <data name="LightToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>116, 22</value>
   </data>
   <data name="LightToolStripMenuItem.Text" xml:space="preserve">
     <value>Light</value>
   </data>
   <data name="DarkToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>116, 22</value>
   </data>
   <data name="DarkToolStripMenuItem.Text" xml:space="preserve">
     <value>Dark</value>
   </data>
   <data name="CustomToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>116, 22</value>
   </data>
   <data name="CustomToolStripMenuItem.Text" xml:space="preserve">
     <value>Custom</value>
@@ -852,15 +852,6 @@
   <data name="toolStrip1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
   </data>
-  <data name="StatusStripConnection.Size" type="System.Drawing.Size, System.Drawing">
-    <value>12, 22</value>
-  </data>
-  <data name="StatusStripConnection.Text" xml:space="preserve">
-    <value>-</value>
-  </data>
-  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>6, 25</value>
-  </data>
   <data name="StatusStripFeedback.Size" type="System.Drawing.Size, System.Drawing">
     <value>12, 22</value>
   </data>
@@ -968,18 +959,6 @@
   </data>
   <data name="&gt;&gt;Column3.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;StatusStripConnection.Name" xml:space="preserve">
-    <value>StatusStripConnection</value>
-  </data>
-  <data name="&gt;&gt;StatusStripConnection.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
-    <value>toolStripSeparator1</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;StatusStripFeedback.Name" xml:space="preserve">
     <value>StatusStripFeedback</value>

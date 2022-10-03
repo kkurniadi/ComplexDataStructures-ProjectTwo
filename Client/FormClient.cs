@@ -36,15 +36,15 @@ namespace Client
                 new NetNamedPipeBinding(), new EndpointAddress("net.pipe://localhost/AstroServer"));
             pipeProxy = pipeFactory.CreateChannel();
             if (CultureInfo.CurrentUICulture.Name == "fr-FR")
-                StatusStripConnection.Text = "Inactive";
+                StatusStripFeedback.Text = "Inactive";
             else if (CultureInfo.CurrentUICulture.Name == "de-DE")
-                StatusStripConnection.Text = "Leerlauf";
+                StatusStripFeedback.Text = "Leerlauf";
             else
-                StatusStripConnection.Text = "Idle";
+                StatusStripFeedback.Text = "Idle";
         }
         private void PromptForConnection()
         {
-            StatusStripConnection.Text = "Disconnected";
+            StatusStripFeedback.Text = "Disconnected";
         }
         // 7.2. Create a form with suitable components for UI,
         // a. Series of textboxes for large numeric data,

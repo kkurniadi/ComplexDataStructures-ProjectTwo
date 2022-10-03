@@ -67,8 +67,6 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.StatusStripConnection = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.StatusStripFeedback = new System.Windows.Forms.ToolStripLabel();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMass)).BeginInit();
@@ -305,20 +303,8 @@
             // 
             resources.ApplyResources(this.toolStrip1, "toolStrip1");
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.StatusStripConnection,
-            this.toolStripSeparator1,
             this.StatusStripFeedback});
             this.toolStrip1.Name = "toolStrip1";
-            // 
-            // StatusStripConnection
-            // 
-            this.StatusStripConnection.Name = "StatusStripConnection";
-            resources.ApplyResources(this.StatusStripConnection, "StatusStripConnection");
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
             // 
             // StatusStripFeedback
             // 
@@ -407,8 +393,6 @@
         private System.Windows.Forms.Button ButtonCalcEH;
         private System.Windows.Forms.DataGridView dataGridViewDisplay;
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripLabel StatusStripConnection;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripLabel StatusStripFeedback;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
