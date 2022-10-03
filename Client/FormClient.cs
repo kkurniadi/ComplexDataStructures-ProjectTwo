@@ -46,6 +46,10 @@ namespace Client
         {
             MessageBox.Show("Please open the server application and try again");
         }
+        private void PromptForInput()
+        {
+            MessageBox.Show("Please fill the appropriate boxes out correctly");
+        }
         // 7.2. Create a form with suitable components for UI,
         // a. Series of textboxes for large numeric data,
         // b. A listview/datagrid for display of processed information from the server,
@@ -74,6 +78,10 @@ namespace Client
                 dataGridViewDisplay.Rows.Add(row);
                 textBoxObserved.Clear();
                 textBoxRest.Clear();
+            }
+            catch (FormatException)
+            {
+                PromptForInput();
             }
             catch (EndpointNotFoundException)
             {
