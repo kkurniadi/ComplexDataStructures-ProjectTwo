@@ -154,14 +154,6 @@ namespace Client
                         upDown.BackColor = SystemColors.Window;
                         upDown.ForeColor = SystemColors.WindowText;
                     }
-                    foreach (var menuStrip in Controls.OfType<MenuStrip>())
-                    {
-                        menuStrip.BackColor = SystemColors.Control;
-                    }
-                    foreach (var toolStrip in Controls.OfType<ToolStrip>())
-                    {
-                        toolStrip.BackColor = SystemColors.Control;
-                    }
                     break;
                 case "Dark":
                     BackColor = SystemColors.ControlDarkDark;
@@ -183,14 +175,6 @@ namespace Client
                     {
                         upDown.BackColor = SystemColors.WindowFrame;
                         upDown.ForeColor = SystemColors.HighlightText;
-                    }
-                    foreach (var menuStrip in Controls.OfType<MenuStrip>())
-                    {
-                        menuStrip.BackColor = SystemColors.ControlDarkDark;
-                    }
-                    foreach (var toolStrip in Controls.OfType<ToolStrip>())
-                    {
-                        toolStrip.BackColor = SystemColors.ControlDarkDark;
                     }
                     break;
             }
@@ -218,6 +202,11 @@ namespace Client
                 {
                     textBox.BackColor = colorDlg.Color;
                     textBox.ForeColor = Color.FromArgb(r, g, b);
+                }
+                foreach (var upDown in Controls.OfType<NumericUpDown>())
+                {
+                    upDown.BackColor = colorDlg.Color;
+                    upDown.ForeColor = Color.FromArgb(r, g, b);
                 }
                 CustomToolStripMenuItem.Checked = true;
                 LightToolStripMenuItem.Checked = false;
