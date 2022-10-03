@@ -63,12 +63,12 @@ namespace Client
             {
                 if (!string.IsNullOrEmpty(textBoxObserved.Text) && !string.IsNullOrEmpty(textBoxRest.Text))
                 {
+                    CultureInfo lang = CultureInfo.CurrentUICulture;
                     double obs = double.Parse(textBoxObserved.Text);
                     double rest = double.Parse(textBoxRest.Text);
                     double velocity = pipeProxy.StarVelocity(obs, rest);
-                    string[] row = new string[] { "Star Velocity", velocity.ToString("E2", CultureInfo.CurrentUICulture), "m/s" };
-                    string lang = CultureInfo.CurrentUICulture.Name;
-                    switch (lang)
+                    string[] row = new string[] { "Star Velocity", velocity.ToString("E2", lang), "m/s" };
+                    switch (lang.Name)
                     {
                         case "fr-FR":
                             row[0] = "Vitesse des Étoiles";
