@@ -51,20 +51,18 @@ namespace Client
             if (CultureInfo.CurrentUICulture.Name == "fr-FR")
             {
                 row[0] = "Vitesse des Étoiles";
-                dataGridViewDisplay.Rows.Add(row);
                 StatusStripFeedback.Text = "Calculé la vitesse de l'étoile";
             }
             else if (CultureInfo.CurrentUICulture.Name == "de-DE")
             {
                 row[0] = "Sterngeschwindigkeit";
-                dataGridViewDisplay.Rows.Add(row);
-                StatusStripFeedback.Text = "Die Sterngeschwindigkeit berechnet";
+                StatusStripFeedback.Text = "Berechnete die Sterngeschwindigkeit";
             }
             else
             {
-                dataGridViewDisplay.Rows.Add(row);
                 StatusStripFeedback.Text = "Calculated the star velocity";
             }
+            dataGridViewDisplay.Rows.Add(row);
             textBoxObserved.Clear();
             textBoxRest.Clear();
         }
