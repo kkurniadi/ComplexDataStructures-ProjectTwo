@@ -42,14 +42,6 @@ namespace Client
             else
                 StatusStripFeedback.Text = "Idle";
         }
-        private void PromptForConnection()
-        {
-            MessageBox.Show("Please open the server application and try again");
-        }
-        private void PromptForInput()
-        {
-            MessageBox.Show("Please fill the appropriate boxes out correctly");
-        }
         // 7.2. Create a form with suitable components for UI,
         // a. Series of textboxes for large numeric data,
         // b. A listview/datagrid for display of processed information from the server,
@@ -59,23 +51,26 @@ namespace Client
         {
             try
             {
-                double obs = double.Parse(textBoxObserved.Text);
-                double rest = double.Parse(textBoxRest.Text);
-                double velocity = pipeProxy.StarVelocity(obs, rest);
-                string[] row = new string[] { "Star Velocity", velocity.ToString("E2", CultureInfo.CurrentUICulture), "m/s" };
-                if (CultureInfo.CurrentUICulture.Name == "fr-FR")
+                if (!string.IsNullOrEmpty(textBoxObserved.Text) && !string.IsNullOrEmpty(textBoxRest.Text))
                 {
-                    row[0] = "Vitesse des Étoiles";
-                    StatusStripFeedback.Text = "Calculé la vitesse de l'étoile";
+                    double obs = double.Parse(textBoxObserved.Text);
+                    double rest = double.Parse(textBoxRest.Text);
+                    double velocity = pipeProxy.StarVelocity(obs, rest);
+                    string[] row = new string[] { "Star Velocity", velocity.ToString("E2", CultureInfo.CurrentUICulture), "m/s" };
+                    if (CultureInfo.CurrentUICulture.Name == "fr-FR")
+                    {
+                        row[0] = "Vitesse des Étoiles";
+                        StatusStripFeedback.Text = "Calculé la vitesse de l'étoile";
+                    }
+                    else if (CultureInfo.CurrentUICulture.Name == "de-DE")
+                    {
+                        row[0] = "Sterngeschwindigkeit";
+                        StatusStripFeedback.Text = "Berechnete die Sterngeschwindigkeit";
+                    }
+                    else
+                        StatusStripFeedback.Text = "Calculated the star velocity";
+                    dataGridViewDisplay.Rows.Add(row);
                 }
-                else if (CultureInfo.CurrentUICulture.Name == "de-DE")
-                {
-                    row[0] = "Sterngeschwindigkeit";
-                    StatusStripFeedback.Text = "Berechnete die Sterngeschwindigkeit";
-                }
-                else
-                    StatusStripFeedback.Text = "Calculated the star velocity";
-                dataGridViewDisplay.Rows.Add(row);
                 textBoxObserved.Clear();
                 textBoxRest.Clear();
             }
@@ -292,5 +287,15 @@ namespace Client
                 DarkToolStripMenuItem.Checked = false;
             }
         }
+        #region Utilities
+        private void PromptForConnection()
+        {
+            MessageBox.Show("Please open the server application and try again");
+        }
+        private void PromptForInput()
+        {
+            MessageBox.Show("Please fill the appropriate boxes out correctly");
+        }
+        #endregion
     }
 }
