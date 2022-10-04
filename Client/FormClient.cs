@@ -63,12 +63,12 @@ namespace Client
             {
                 if (!string.IsNullOrEmpty(textBoxObserved.Text) && !string.IsNullOrEmpty(textBoxRest.Text))
                 {
-                    CultureInfo lang = CultureInfo.CurrentUICulture;
+                    CultureInfo culture = CultureInfo.CurrentUICulture;
                     double obs = double.Parse(textBoxObserved.Text);
                     double rest = double.Parse(textBoxRest.Text);
                     double velocity = pipeProxy.StarVelocity(obs, rest);
-                    string[] row = new string[] { "Star Velocity", velocity.ToString("E2", lang), "m/s" };
-                    switch (lang.Name)
+                    string[] row = new string[] { "Star Velocity", velocity.ToString("E2", culture), "m/s" };
+                    switch (culture.Name)
                     {
                         case "fr-FR":
                             row[0] = "Vitesse des Étoiles";
@@ -100,11 +100,11 @@ namespace Client
             {
                 if (!string.IsNullOrEmpty(textBoxAngle.Text))
                 {
+                    CultureInfo culture = CultureInfo.CurrentUICulture;
                     double angle = double.Parse(textBoxAngle.Text);
                     double distance = pipeProxy.StarDistance(angle);
-                    string[] row = new string[] { "Star Distance", distance.ToString("G3", CultureInfo.CurrentUICulture), "parsecs" };
-                    string lang = CultureInfo.CurrentUICulture.Name;
-                    switch (lang)
+                    string[] row = new string[] { "Star Distance", distance.ToString("G3", culture), "parsecs" };
+                    switch (culture.Name)
                     {
                         case "fr-FR":
                             row[0] = "Distance Étoile";
@@ -135,11 +135,11 @@ namespace Client
             {
                 if (!string.IsNullOrEmpty(textBoxCelsius.Text))
                 {
+                    CultureInfo culture = CultureInfo.CurrentUICulture;
                     double celsius = double.Parse(textBoxCelsius.Text);
                     double kelvin = pipeProxy.TempInKelvin(celsius);
-                    string[] row = new string[] { "Temp in Kelvin", kelvin.ToString(CultureInfo.CurrentUICulture), "K" };
-                    string lang = CultureInfo.CurrentUICulture.Name;
-                    switch (lang)
+                    string[] row = new string[] { "Temp in Kelvin", kelvin.ToString(culture), "K" };
+                    switch (culture.Name)
                     {
                         case "fr-FR":
                             row[0] = "Température en Kelvin";
@@ -170,11 +170,11 @@ namespace Client
             {
                 if (!string.IsNullOrEmpty(textBoxMass.Text))
                 {
+                    CultureInfo culture = CultureInfo.CurrentUICulture;
                     double mass = double.Parse(textBoxMass.Text) * Math.Pow(10, (double)numericUpDownMass.Value);
                     double radius = pipeProxy.EventHorizon(mass);
-                    string[] row = new string[] { "Event Horizon", radius.ToString("G2", CultureInfo.CurrentUICulture), "m" };
-                    string lang = CultureInfo.CurrentUICulture.Name;
-                    switch (lang)
+                    string[] row = new string[] { "Event Horizon", radius.ToString("G2", culture), "m" };
+                    switch (culture.Name)
                     {
                         case "fr-FR":
                             row[0] = "Horizon des événements";
