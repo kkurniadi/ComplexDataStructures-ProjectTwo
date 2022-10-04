@@ -270,7 +270,7 @@ namespace Client
                     }
                     foreach (var button in Controls.OfType<Button>())
                     {
-                        button.BackColor = SystemColors.ButtonFace;
+                        button.BackColor = SystemColors.Control;
                         button.ForeColor = SystemColors.ControlText;
                     }
                     break;
