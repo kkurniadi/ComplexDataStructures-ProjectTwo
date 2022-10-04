@@ -364,7 +364,21 @@ namespace Client
         }
         private void PromptForInput()
         {
-            MessageBox.Show("Please fill the appropriate boxes and try again");
+            switch (CultureInfo.CurrentUICulture.Name)
+            {
+                case "fr-FR":
+                    MessageBox.Show("Veuillez remplir les cases appropriées et réessayer", "Entrée de données",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+                case "de-DE":
+                    MessageBox.Show("Bitte füllen Sie die entsprechenden Felder aus und versuchen Sie es erneut", "Dateneingabe",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+                default:
+                    MessageBox.Show("Please fill the appropriate boxes and try again", "Data Entry",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    break;
+            }
         }
         
         private void TextBoxes_KeyPress(object sender, KeyPressEventArgs e)
