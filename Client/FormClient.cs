@@ -346,7 +346,21 @@ namespace Client
         #region Utilities
         private void PromptForConnection()
         {
-            MessageBox.Show("Please open the server application and try again");
+            switch (CultureInfo.CurrentUICulture.Name)
+            {
+                case "fr-FR":
+                    MessageBox.Show("Veuillez ouvrir l'application serveur et réessayer", "Serveur déconnecté", 
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    break;
+                case "de-DE":
+                    MessageBox.Show("Bitte öffnen Sie die Serveranwendung und versuchen Sie es erneut", "Server getrennt",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    break;
+                default:
+                    MessageBox.Show("Please open the server application and try again", "Server Disconnected",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    break;
+            }
         }
         private void PromptForInput()
         {
