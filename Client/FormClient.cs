@@ -273,16 +273,6 @@ namespace Client
                         button.BackColor = SystemColors.ButtonFace;
                         button.ForeColor = SystemColors.ControlText;
                     }
-                    foreach (var textBox in Controls.OfType<TextBox>())
-                    {
-                        textBox.BackColor = SystemColors.Window;
-                        textBox.ForeColor = SystemColors.WindowText;
-                    }
-                    foreach (var upDown in Controls.OfType<NumericUpDown>())
-                    {
-                        upDown.BackColor = SystemColors.Window;
-                        upDown.ForeColor = SystemColors.WindowText;
-                    }
                     break;
                 case "Dark":
                     BackColor = SystemColors.ControlDarkDark;
@@ -294,16 +284,6 @@ namespace Client
                     {
                         button.BackColor = SystemColors.ControlDark;
                         button.ForeColor = SystemColors.ControlLightLight;
-                    }
-                    foreach (var textBox in Controls.OfType<TextBox>())
-                    {
-                        textBox.BackColor = SystemColors.WindowFrame;
-                        textBox.ForeColor = SystemColors.HighlightText;
-                    }
-                    foreach (var upDown in Controls.OfType<NumericUpDown>())
-                    {
-                        upDown.BackColor = SystemColors.WindowFrame;
-                        upDown.ForeColor = SystemColors.HighlightText;
                     }
                     break;
             }
@@ -327,16 +307,6 @@ namespace Client
                 {
                     button.BackColor = colorDlg.Color;
                     button.ForeColor = Color.FromArgb(r, g, b);
-                }
-                foreach (var textBox in Controls.OfType<TextBox>())
-                {
-                    textBox.BackColor = colorDlg.Color;
-                    textBox.ForeColor = Color.FromArgb(r, g, b);
-                }
-                foreach (var upDown in Controls.OfType<NumericUpDown>())
-                {
-                    upDown.BackColor = colorDlg.Color;
-                    upDown.ForeColor = Color.FromArgb(r, g, b);
                 }
                 CustomToolStripMenuItem.Checked = true;
                 LightToolStripMenuItem.Checked = false;
