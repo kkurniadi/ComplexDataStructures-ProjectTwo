@@ -89,9 +89,13 @@ namespace Client
                 else
                     PromptForInput();
             }
-            catch (Exception)
+            catch (EndpointNotFoundException)
             {
                 PromptForConnection();
+            }
+            catch (Exception)
+            {
+                PromptForReopen();
             }
         }
         private void ButtonCalcDistance_Click(object sender, EventArgs e)
@@ -124,9 +128,13 @@ namespace Client
                 else
                     PromptForInput();
             }
-            catch (Exception)
+            catch (EndpointNotFoundException)
             {
                 PromptForConnection();
+            }
+            catch (Exception)
+            {
+                PromptForReopen();
             }
         }
         private void ButtonCalcKelvin_Click(object sender, EventArgs e)
@@ -159,9 +167,13 @@ namespace Client
                 else
                     PromptForInput();
             }
-            catch (Exception)
+            catch (EndpointNotFoundException)
             {
                 PromptForConnection();
+            }
+            catch (Exception)
+            {
+                PromptForReopen();
             }
         }
         private void ButtonCalcEH_Click(object sender, EventArgs e)
@@ -194,9 +206,13 @@ namespace Client
                 else
                     PromptForInput();
             }
-            catch (Exception)
+            catch (EndpointNotFoundException)
             {
                 PromptForConnection();
+            }
+            catch (Exception)
+            {
+                PromptForReopen();
             }
         }
         #endregion
@@ -350,7 +366,20 @@ namespace Client
                     break;
             }
         }
-        
+        private void PromptForReopen()
+        {
+            switch (CultureInfo.CurrentUICulture.Name)
+            {
+                case "fr-FR":
+                    MessageBox.Show("There was an error connecting to the server\nPlease close and reopen the server and try again.",
+                        "Server Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    break;
+                default:
+                    MessageBox.Show("There was an error connecting to the server\nPlease close and reopen the server and try again.",
+                        "Server Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    break;
+            }
+        }
         private void TextBoxes_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back
