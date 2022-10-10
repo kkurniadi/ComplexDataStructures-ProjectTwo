@@ -89,7 +89,7 @@ namespace Client
                 else
                     PromptForInput();
             }
-            catch (EndpointNotFoundException)
+            catch (Exception)
             {
                 PromptForConnection();
             }
@@ -124,7 +124,7 @@ namespace Client
                 else
                     PromptForInput();
             }
-            catch (EndpointNotFoundException)
+            catch (Exception)
             {
                 PromptForConnection();
             }
@@ -159,7 +159,7 @@ namespace Client
                 else
                     PromptForInput();
             }
-            catch (EndpointNotFoundException)
+            catch (Exception)
             {
                 PromptForConnection();
             }
@@ -194,7 +194,7 @@ namespace Client
                 else
                     PromptForInput();
             }
-            catch (EndpointNotFoundException)
+            catch (Exception)
             {
                 PromptForConnection();
             }
