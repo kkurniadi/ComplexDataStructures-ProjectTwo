@@ -227,7 +227,6 @@ namespace Client
             EnglishToolStripMenuItem.Checked = true;
             FrenchToolStripMenuItem.Checked = false;
             GermanToolStripMenuItem.Checked = false;
-            ChangeTheme(currentTheme);
         }
         private void FrenchToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -235,7 +234,6 @@ namespace Client
             FrenchToolStripMenuItem.Checked = true;
             EnglishToolStripMenuItem.Checked = false;
             GermanToolStripMenuItem.Checked = false;
-            ChangeTheme(currentTheme);
         }
         private void GermanToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -243,7 +241,6 @@ namespace Client
             GermanToolStripMenuItem.Checked = true;
             EnglishToolStripMenuItem.Checked = false;
             FrenchToolStripMenuItem.Checked = false;
-            ChangeTheme(currentTheme);
         }
         private void ChangeLanguage(string language)
         {
@@ -262,6 +259,7 @@ namespace Client
             Controls.Clear();
             InitializeComponent();
             ConnectToServer();
+            ChangeTheme(currentTheme);
         }
         #endregion
         // 7.4. Menu option to change the form’s style (colours and visual appearance).
