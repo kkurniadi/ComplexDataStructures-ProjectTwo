@@ -28,6 +28,9 @@ namespace Client
             KeyPress += new KeyPressEventHandler(TextBoxes_KeyPress); 
         }
         IAstroContract pipeProxy = null;
+        string currentTheme = "Light";
+        Color customBG = Color.Empty;
+        Color customFG = Color.Empty;
         private void FormClient_Load(object sender, EventArgs e)
         {
             Thread.CurrentThread.CurrentUICulture = Thread.CurrentThread.CurrentCulture;
@@ -302,7 +305,20 @@ namespace Client
                         button.ForeColor = SystemColors.ControlLightLight;
                     }
                     break;
+                case "Custom":
+                    BackColor = customBG;
+                    foreach (var label in Controls.OfType<Label>())
+                    {
+                        label.ForeColor = customFG;
+                    }
+                    foreach (var button in Controls.OfType<Button>())
+                    {
+                        button.BackColor = customBG;
+                        button.ForeColor = customFG;
+                    }
+                    break;
             }
+            currentTheme = themeName;
         }
         #endregion
         // 7.5. Menu/Button option to select a custom colour from a colour palette (Color Dialogbox)
@@ -311,19 +327,12 @@ namespace Client
             ColorDialog colorDlg = new ColorDialog();
             if (colorDlg.ShowDialog() == DialogResult.OK)
             {
-                BackColor = colorDlg.Color;
-                byte r = (byte)(255 - BackColor.R);
-                byte g = (byte)(255 - BackColor.G);
-                byte b = (byte)(255 - BackColor.B);
-                foreach (var label in Controls.OfType<Label>())
-                {
-                    label.ForeColor = Color.FromArgb(r, g, b);
-                }
-                foreach (var button in Controls.OfType<Button>())
-                {
-                    button.BackColor = colorDlg.Color;
-                    button.ForeColor = Color.FromArgb(r, g, b);
-                }
+                customBG = colorDlg.Color;
+                byte r = (byte)(255 - customBG.R);
+                byte g = (byte)(255 - customBG.G);
+                byte b = (byte)(255 - customBG.B);
+                customFG = Color.FromArgb(r, g, b);
+                ChangeTheme("Custom");
                 CustomToolStripMenuItem.Checked = true;
                 LightToolStripMenuItem.Checked = false;
                 DarkToolStripMenuItem.Checked = false;
