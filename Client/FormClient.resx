@@ -121,6 +121,54 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="EnglishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 22</value>
+  </data>
+  <data name="EnglishToolStripMenuItem.Text" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="FrenchToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 22</value>
+  </data>
+  <data name="FrenchToolStripMenuItem.Text" xml:space="preserve">
+    <value>French</value>
+  </data>
+  <data name="GermanToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 22</value>
+  </data>
+  <data name="GermanToolStripMenuItem.Text" xml:space="preserve">
+    <value>German</value>
+  </data>
+  <data name="LangToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 20</value>
+  </data>
+  <data name="LangToolStripMenuItem.Text" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="LightToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 22</value>
+  </data>
+  <data name="LightToolStripMenuItem.Text" xml:space="preserve">
+    <value>Light</value>
+  </data>
+  <data name="DarkToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 22</value>
+  </data>
+  <data name="DarkToolStripMenuItem.Text" xml:space="preserve">
+    <value>Dark</value>
+  </data>
+  <data name="CustomToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 22</value>
+  </data>
+  <data name="CustomToolStripMenuItem.Text" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="themeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 20</value>
+  </data>
+  <data name="themeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Theme</value>
+  </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -145,54 +193,6 @@
   </data>
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
     <value>26</value>
-  </data>
-  <data name="LangToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 20</value>
-  </data>
-  <data name="LangToolStripMenuItem.Text" xml:space="preserve">
-    <value>Language</value>
-  </data>
-  <data name="EnglishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 22</value>
-  </data>
-  <data name="EnglishToolStripMenuItem.Text" xml:space="preserve">
-    <value>English</value>
-  </data>
-  <data name="FrenchToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 22</value>
-  </data>
-  <data name="FrenchToolStripMenuItem.Text" xml:space="preserve">
-    <value>French</value>
-  </data>
-  <data name="GermanToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 22</value>
-  </data>
-  <data name="GermanToolStripMenuItem.Text" xml:space="preserve">
-    <value>German</value>
-  </data>
-  <data name="themeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 20</value>
-  </data>
-  <data name="themeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Theme</value>
-  </data>
-  <data name="LightToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 22</value>
-  </data>
-  <data name="LightToolStripMenuItem.Text" xml:space="preserve">
-    <value>Light</value>
-  </data>
-  <data name="DarkToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 22</value>
-  </data>
-  <data name="DarkToolStripMenuItem.Text" xml:space="preserve">
-    <value>Dark</value>
-  </data>
-  <data name="CustomToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 22</value>
-  </data>
-  <data name="CustomToolStripMenuItem.Text" xml:space="preserve">
-    <value>Custom</value>
   </data>
   <data name="labelVelocity.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -809,12 +809,21 @@
   <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="Column1.HeaderText" xml:space="preserve">
+    <value>Calculation Type</value>
+  </data>
   <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="Column2.HeaderText" xml:space="preserve">
+    <value>Result</value>
+  </data>
   <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="Column3.HeaderText" xml:space="preserve">
+    <value>Units</value>
+  </data>
   <data name="dataGridViewDisplay.Location" type="System.Drawing.Point, System.Drawing">
     <value>44, 288</value>
   </data>
@@ -836,30 +845,18 @@
   <data name="&gt;&gt;dataGridViewDisplay.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Column1.HeaderText" xml:space="preserve">
-    <value>Calculation Type</value>
-  </data>
-  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Column2.HeaderText" xml:space="preserve">
-    <value>Result</value>
-  </data>
-  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Column3.HeaderText" xml:space="preserve">
-    <value>Units</value>
-  </data>
   <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>132, 17</value>
   </metadata>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="toolStrip1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
+  </data>
+  <data name="StatusStripFeedback.Size" type="System.Drawing.Size, System.Drawing">
+    <value>12, 22</value>
+  </data>
+  <data name="StatusStripFeedback.Text" xml:space="preserve">
+    <value>-</value>
   </data>
   <data name="toolStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 443</value>
@@ -884,12 +881,6 @@
   </data>
   <data name="&gt;&gt;toolStrip1.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="StatusStripFeedback.Size" type="System.Drawing.Size, System.Drawing">
-    <value>12, 22</value>
-  </data>
-  <data name="StatusStripFeedback.Text" xml:space="preserve">
-    <value>-</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

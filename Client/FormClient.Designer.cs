@@ -281,6 +281,8 @@
             // 
             // dataGridViewDisplay
             // 
+            this.dataGridViewDisplay.AllowUserToAddRows = false;
+            this.dataGridViewDisplay.AllowUserToDeleteRows = false;
             this.dataGridViewDisplay.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewDisplay.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -288,21 +290,25 @@
             this.Column3});
             resources.ApplyResources(this.dataGridViewDisplay, "dataGridViewDisplay");
             this.dataGridViewDisplay.Name = "dataGridViewDisplay";
+            this.dataGridViewDisplay.ReadOnly = true;
             // 
             // Column1
             // 
             resources.ApplyResources(this.Column1, "Column1");
             this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
             // Column2
             // 
             resources.ApplyResources(this.Column2, "Column2");
             this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             // 
             // Column3
             // 
             resources.ApplyResources(this.Column3, "Column3");
             this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // toolStrip1
             // 
