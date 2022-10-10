@@ -371,8 +371,12 @@ namespace Client
             switch (CultureInfo.CurrentUICulture.Name)
             {
                 case "fr-FR":
-                    MessageBox.Show("There was an error connecting to the server\nPlease close and reopen the server and try again.",
-                        "Server Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Une erreur s'est produite lors de la connexion au serveur\nVeuillez fermer et rouvrir le serveur et réessayer.",
+                        "Erreur du Serveur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    break;
+                case "de-DE":
+                    MessageBox.Show("Beim Verbinden mit dem Server ist ein Fehler aufgetreten\nBitte schließen und öffnen Sie den Server erneut und versuchen Sie es erneut",
+                        "Serverfehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     break;
                 default:
                     MessageBox.Show("There was an error connecting to the server\nPlease close and reopen the server and try again.",
